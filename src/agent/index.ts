@@ -76,6 +76,7 @@ import { SelfModModule } from '../self-mod/index.js';
 import { SelfModRepository } from '../state/repositories/self-mod.repo.js';
 import { OkxHeartbeatService, createOkxHeartbeatService } from '../infrastructure/okx-heartbeat.js';
 import { FeatureEngine } from '../strategies/trading/feature-engine.js';
+import { EcosystemOverseer } from '../overseer/ecosystem-overseer.js';
 
 // ---------------------------------------------------------------------------
 // Types
@@ -139,6 +140,7 @@ export class AgentCore {
   // Adaptive Evolver — bridge between discovery and self-improvement
   private adaptiveEvolver: AdaptiveEvolver | null = null;
   private selfModModule: SelfModModule | null = null;
+  private ecosystemOverseer: EcosystemOverseer | null = null;
   // Proposal Consolidator — daily cleanup and classification (FIX-028)
   private proposalConsolidator: ProposalConsolidator | null = null;
   // OKX Marketplace heartbeat
@@ -816,6 +818,17 @@ export class AgentCore {
             console.warn('[AgentCore] ServicesModule failed to start (non-fatal):', (err as Error).message);
           }
         }
+
+        // --- Ecosystem Overseer (CEO) ---
+        this.ecosystemOverseer = new EcosystemOverseer();
+        // Execute immediately (non-blocking) and set interval
+        setTimeout(() => {
+          this.ecosystemOverseer?.evaluateEcosystem().catch(e => console.error(e));
+        }, 10_000); // 10s after startup
+        setInterval(() => {
+          this.ecosystemOverseer?.evaluateEcosystem().catch(e => console.error(e));
+        }, 12 * 60 * 60 * 1000); // every 12 hours
+        console.log('[AgentCore] EcosystemOverseer (CEO) initialized. Evaluation interval: 12h.');
 
         const observationsRepo = new ObservationsRepository(this.db!.getDb());
 
