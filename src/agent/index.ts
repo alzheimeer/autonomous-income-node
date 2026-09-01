@@ -42,7 +42,7 @@ import { ObservationsRepository } from '../state/repositories/observations.repo.
 import type { EnvConfig } from '../config/types.js';
 import { IdentityRepository } from '../state/repositories/identity.repo.js';
 import { HeartbeatRepository } from '../state/repositories/heartbeat.repo.js';
-import { ContentGenerator } from '../strategies/content/index.js';
+// import { ContentGenerator } from '../strategies/content/index.js';
 import { SocialPostsRepository } from '../state/repositories/social-posts.repo.js';
 import type { ModuleHandlers } from './action-dispatcher.js';
 import { ConwayClient, createConwayClient, provisionConwayApiKey } from '../conway/index.js';
@@ -114,7 +114,7 @@ export class AgentCore {
   private reactLoop: ReActLoop | null = null;
   private eventBus: AgentEventBus;
   // Content generator for social posts
-  private contentGenerator: ContentGenerator | null = null;
+  // private contentGenerator: ContentGenerator | null = null;
   // LLM MCP client (shared with ReActLoop for content generation)
   private llmClient: McpClient | null = null;
   // Conway client — red de agentes para ingresos via créditos
@@ -745,8 +745,8 @@ export class AgentCore {
         this.llmClient = llmClient;
 
         // Build ContentGenerator for social module handler
-        const socialPostsRepo = new SocialPostsRepository(this.db!.getDb());
-        this.contentGenerator = new ContentGenerator(llmClient, socialPostsRepo);
+        // const socialPostsRepo = new SocialPostsRepository(this.db!.getDb());
+        // this.contentGenerator = new ContentGenerator(llmClient, socialPostsRepo);
 
         // ── Income Sustainability Engine — LLM-dependent modules ────────────────
         // Opportunity Discovery (always active — scans DeFi + marketplaces)
@@ -847,29 +847,7 @@ export class AgentCore {
           // Telegram es el canal principal. Discord es backup si Telegram falla.
           // Twitter free plan no permite postear (HTTP 402).
           social: async (action) => {
-            if (!this.contentGenerator) return { skipped: true, reason: 'ContentGenerator not initialized' };
-            const params = action.params as Record<string, unknown>;
-            const topic = typeof params['topic'] === 'string' ? params['topic'] : 'autonomous AI agents and DeFi';
-
-            // Intentar Telegram primero
-            try {
-              const result = await this.contentGenerator.generateAndPost(topic, 'telegram');
-              console.log(`[AgentCore] Social post published to Telegram: ${result.url}`);
-              return { platform: 'telegram', ...result };
-            } catch (tgErr) {
-              console.warn(`[AgentCore] Telegram failed, trying Discord: ${(tgErr as Error).message}`);
-            }
-
-            // Fallback a Discord si Telegram falla
-            try {
-              const result = await this.contentGenerator.generateAndPost(topic, 'webhook');
-              console.log(`[AgentCore] Social post published to Discord (fallback): ${result.url}`);
-              return { platform: 'discord', ...result };
-            } catch (discordErr) {
-              const msg = (discordErr as Error).message;
-              console.warn(`[AgentCore] Discord fallback also failed: ${msg}`);
-              return { skipped: true, reason: msg };
-            }
+            return { skipped: true, reason: 'Social module has been removed (handled by OmniAI-Engine)' };
           },
 
           // heartbeat: return current health status

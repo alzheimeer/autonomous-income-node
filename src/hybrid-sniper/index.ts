@@ -177,7 +177,7 @@ export async function initHybridSniper(
     const { TelegramClient } = await import('../social/telegram-client.js');
     const telegramClient = new TelegramClient();
     rugAlertService = new RugAlertService(
-      provider, dexQuoter, shadowExecutor, multiVariantExecutor,
+      provider, dexQuoter, shadowExecutor, multiVariantExecutor as any,
       metricsRecorder, riskBucket, telegramClient, env
     );
     await rugAlertService.start();

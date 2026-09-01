@@ -29,7 +29,7 @@ import type { EngineState, CycleResult, StrategyProposal } from './comms/protoco
 // Scanners
 import { MarketplaceScanner } from './scanners/marketplace-scanner.js';
 import { RPAScanner } from './scanners/rpa-scanner.js';
-import { ContentScanner } from './scanners/content-scanner.js';
+// import { ContentScanner } from './scanners/content-scanner.js';
 import { TradingScanner } from './scanners/trading-scanner.js';
 import { GeneralScanner } from './scanners/general-scanner.js';
 
@@ -91,7 +91,7 @@ export class ResearchEngine {
     this.scanners = [
       new MarketplaceScanner(),
       new RPAScanner(),
-      new ContentScanner(),
+      // new ContentScanner(),
       new TradingScanner(),
       new GeneralScanner(),
     ];

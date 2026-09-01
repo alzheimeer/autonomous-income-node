@@ -562,7 +562,7 @@ export class MultiVariantExecutor {
   // Close position and update metrics
   // ─────────────────────────────────────────────────────────────────────────
 
-  private closePosition(
+  public closePosition(
     position: VariantPosition,
     exitReason: 'TP_HIT' | 'SL_HIT' | 'TIME_STOP',
     exitPrice: bigint,
