@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-19T06:43:45.972Z",
+  "priority": "P1",
+  "payload": {
+    "opportunityId": "f2bd0d64-87e6-460d-90a7-e9639dd404b2",
+    "title": "AI content niche: AI Agent Packages for ITSM: A Practical Framework",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: AI Agent Packages for ITSM: A Practical Framework\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

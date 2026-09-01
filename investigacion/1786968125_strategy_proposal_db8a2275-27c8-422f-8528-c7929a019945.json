@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-17T12:02:05.496Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "db8a2275-27c8-422f-8528-c7929a019945",
+    "title": "AI content niche: Semantic Cache: Aynı Soruyu İkinci Kez Sormanın Bedeli",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Semantic Cache: Aynı Soruyu İkinci Kez Sormanın Bedeli\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

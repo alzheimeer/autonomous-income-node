@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-16T14:47:10.929Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "82e2013c-5403-484c-b2f9-11cdee2d6a6b",
+    "title": "AI content niche: Stop Giving AI a Fake PhD — Here’s Why Expert Personas Don’t Improve Accuracy (A",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Stop Giving AI a Fake PhD — Here’s Why Expert Personas Don’t Improve Accuracy (A\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-15T12:17:33.329Z",
+  "priority": "P1",
+  "payload": {
+    "opportunityId": "893105cd-c2c4-4d9a-a179-38eb7a5435ba",
+    "title": "AI content niche: I Built an AI Agent Harness That Uses Remote MCP Tools",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: I Built an AI Agent Harness That Uses Remote MCP Tools\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-16T05:51:34.724Z",
+  "priority": "P1",
+  "payload": {
+    "opportunityId": "4bebcec4-134b-421e-9ea9-7beaf395fb15",
+    "title": "AI content niche: I Built A Survey To Measure Whether People Trust AI Agents. The Data Surprised M",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: I Built A Survey To Measure Whether People Trust AI Agents. The Data Surprised M\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

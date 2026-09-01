@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-15T18:31:01.512Z",
+  "priority": "P1",
+  "payload": {
+    "opportunityId": "476efea3-a2ab-4544-a5c2-184d6731b4ee",
+    "title": "AI content niche: The AI Coding Agent Price War Just Rewrote the Rules for Developers",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: The AI Coding Agent Price War Just Rewrote the Rules for Developers\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

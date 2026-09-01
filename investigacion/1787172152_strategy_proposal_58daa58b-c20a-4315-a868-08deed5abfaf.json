@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-19T20:42:32.528Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "58daa58b-c20a-4315-a868-08deed5abfaf",
+    "title": "AI content niche: AI Safety Is Four Different Jobs Wearing One Name Tag",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: AI Safety Is Four Different Jobs Wearing One Name Tag\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

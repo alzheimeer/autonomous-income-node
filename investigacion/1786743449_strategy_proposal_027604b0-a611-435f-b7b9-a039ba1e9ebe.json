@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-14T21:37:29.524Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "027604b0-a611-435f-b7b9-a039ba1e9ebe",
+    "title": "AI content niche: AI’s Next Winners May Not Build Models.",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: AI’s Next Winners May Not Build Models.\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

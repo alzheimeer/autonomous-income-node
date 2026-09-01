@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-20T08:56:24.738Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "4a3287f4-6b07-4527-8d51-04dae11ad76f",
+    "title": "AI content niche: An AI-Powered Photogrammetry Alternative for Fast 3D Site Modeling",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: An AI-Powered Photogrammetry Alternative for Fast 3D Site Modeling\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-18T15:25:27.935Z",
+  "priority": "P2",
+  "payload": {
+    "opportunityId": "530816ed-18e6-4b3a-9375-e23c5c27bbc7",
+    "title": "AI content niche: AI Robotics Is Entering Its Real-World Era: From Chatbots to Machines That Act",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: AI Robotics Is Entering Its Real-World Era: From Chatbots to Machines That Act\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

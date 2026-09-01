@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-21T05:11:40.573Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "7f486a19-af58-4e0c-a054-6a2b8565be4b",
+    "title": "AI content niche: From Learning to Building: My Gen AI Journey with Google Cloud",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: From Learning to Building: My Gen AI Journey with Google Cloud\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

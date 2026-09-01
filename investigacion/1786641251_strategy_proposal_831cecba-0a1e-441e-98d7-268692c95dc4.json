@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-13T17:14:11.934Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "831cecba-0a1e-441e-98d7-268692c95dc4",
+    "title": "AI content niche: Why CLAUDE.md Keeps Growing",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Why CLAUDE.md Keeps Growing\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

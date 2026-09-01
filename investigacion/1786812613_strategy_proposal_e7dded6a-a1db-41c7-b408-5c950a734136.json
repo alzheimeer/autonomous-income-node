@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-15T16:50:13.102Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "e7dded6a-a1db-41c7-b408-5c950a734136",
+    "title": "AI content niche: Google ADK vs LangGraph vs CrewAI: The One Decision That Actually Matters",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Google ADK vs LangGraph vs CrewAI: The One Decision That Actually Matters\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

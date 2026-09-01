@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-15T06:43:43.459Z",
+  "priority": "P1",
+  "payload": {
+    "opportunityId": "450df9e4-55a1-47cf-b437-9a45329c1892",
+    "title": "AI content niche: GenAI and ServiceNow: Transforming Enterprise Operations Through Intelligent Aut",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: GenAI and ServiceNow: Transforming Enterprise Operations Through Intelligent Aut\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

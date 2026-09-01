@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-16T19:01:31.997Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "017fce41-8b7a-4a34-9cf5-85085579a09b",
+    "title": "AI content niche: Big Data and Artificial Intelligence",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Big Data and Artificial Intelligence\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

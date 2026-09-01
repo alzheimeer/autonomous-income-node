@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-20T10:18:18.082Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "d61f7a46-50f4-4628-8401-2741364fa996",
+    "title": "AI content niche: AI Is Turning Developer Experience Into a Hiring Advantage",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: AI Is Turning Developer Experience Into a Hiring Advantage\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

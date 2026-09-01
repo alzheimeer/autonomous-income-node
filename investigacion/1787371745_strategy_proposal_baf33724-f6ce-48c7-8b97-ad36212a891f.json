@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-22T04:09:05.628Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "baf33724-f6ce-48c7-8b97-ad36212a891f",
+    "title": "AI content niche: 9 AI Engineering Skills You Need to Master in 2026 to Stay Relevant",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: 9 AI Engineering Skills You Need to Master in 2026 to Stay Relevant\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

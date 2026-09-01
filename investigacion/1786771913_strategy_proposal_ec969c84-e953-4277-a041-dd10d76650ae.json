@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-15T05:31:53.318Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "ec969c84-e953-4277-a041-dd10d76650ae",
+    "title": "AI content niche: Not All Channels Are Created Equal: Why Attention Matters in Agricultural AI",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Not All Channels Are Created Equal: Why Attention Matters in Agricultural AI\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

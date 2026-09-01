@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-15T06:43:41.544Z",
+  "priority": "P1",
+  "payload": {
+    "opportunityId": "020f19aa-1243-427d-827b-688caa19b897",
+    "title": "AI content niche: Passing CI Is the Easy Part. Would You Merge the AI Agent’s PR?",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Passing CI Is the Easy Part. Would You Merge the AI Agent’s PR?\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

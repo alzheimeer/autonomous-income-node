@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-16T00:57:48.698Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "61dc5b9e-b854-47a9-96c6-974f6394af06",
+    "title": "AI content niche: AI is Changing South Korea Even Faster Than it’s Changing the US; Why  Is The Fa",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: AI is Changing South Korea Even Faster Than it’s Changing the US; Why  Is The Fa\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

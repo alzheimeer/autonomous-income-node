@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-17T20:32:42.618Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "d3286691-5449-4efd-a18a-7fe80f1097d2",
+    "title": "AI content niche: Social Media Managers: How to Create 60+ Viral Posts Using AI Templates in Minut",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Social Media Managers: How to Create 60+ Viral Posts Using AI Templates in Minut\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

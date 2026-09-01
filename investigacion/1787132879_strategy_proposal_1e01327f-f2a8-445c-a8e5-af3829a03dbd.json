@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-19T09:47:59.776Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "1e01327f-f2a8-445c-a8e5-af3829a03dbd",
+    "title": "AI content niche: The RLHF Trap: When Preference Training Rewards Agreement Over Truth",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: The RLHF Trap: When Preference Training Rewards Agreement Over Truth\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

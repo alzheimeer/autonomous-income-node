@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-14T13:02:38.820Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "3a0f104f-0e81-4b57-a3d9-18053de35737",
+    "title": "AI content niche: Bölüm 1: Bir AI-SOC platformunu kurmak",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Bölüm 1: Bir AI-SOC platformunu kurmak\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-15T12:17:31.885Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "efdb5c1e-677c-4626-8ade-3e1a86d13eae",
+    "title": "AI content niche: I Stopped Using Google for Every Question — Here’s What Happened",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: I Stopped Using Google for Every Question — Here’s What Happened\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

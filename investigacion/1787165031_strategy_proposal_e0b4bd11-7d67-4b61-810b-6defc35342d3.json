@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-19T18:43:51.059Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "e0b4bd11-7d67-4b61-810b-6defc35342d3",
+    "title": "AI content niche: The Question AI Couldn’t Answer",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: The Question AI Couldn’t Answer\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

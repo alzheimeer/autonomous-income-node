@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-20T07:34:48.353Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "f3795b5b-dd31-4ba2-a8cb-5966be8c7265",
+    "title": "AI content niche: I Added MMR After Cross-Encoder Reranking: It Fixed One Multi-Hop RAG Case, Not ",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: I Added MMR After Cross-Encoder Reranking: It Fixed One Multi-Hop RAG Case, Not \"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

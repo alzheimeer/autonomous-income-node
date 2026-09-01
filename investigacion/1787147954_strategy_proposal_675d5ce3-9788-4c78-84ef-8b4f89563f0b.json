@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-19T13:59:14.581Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "675d5ce3-9788-4c78-84ef-8b4f89563f0b",
+    "title": "AI content niche: OWASP Just Ranked Prompt Injection #1 Again.",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: OWASP Just Ranked Prompt Injection #1 Again.\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

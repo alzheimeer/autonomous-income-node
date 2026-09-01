@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-17T16:35:59.505Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "bac6ba22-a133-403c-afae-5529e62abd1a",
+    "title": "AI content niche: The Hint Ladder: How to Let Students Use AI for Help Without Getting the Answer",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: The Hint Ladder: How to Let Students Use AI for Help Without Getting the Answer\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

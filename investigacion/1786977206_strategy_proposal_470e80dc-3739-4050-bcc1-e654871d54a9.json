@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-17T14:33:26.370Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "470e80dc-3739-4050-bcc1-e654871d54a9",
+    "title": "AI content niche: One Man From OpenAI Funds Embryo Screening. Another Told His Wife to Stop at Two",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: One Man From OpenAI Funds Embryo Screening. Another Told His Wife to Stop at Two\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

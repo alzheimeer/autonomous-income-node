@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-22T02:15:00.665Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "0f34649d-3e2d-4144-b980-2ada9ae3ff27",
+    "title": "AI content niche: An AI MOVIE Should Have Gone Old School QC",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: An AI MOVIE Should Have Gone Old School QC\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

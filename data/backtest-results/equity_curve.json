@@ -1,0 +1,74 @@
+[
+  {
+    "timestamp": 0,
+    "portfolio_value_usdc": "25000000"
+  },
+  {
+    "timestamp": 1783347300000,
+    "portfolio_value_usdc": "24987621"
+  },
+  {
+    "timestamp": 1783510200000,
+    "portfolio_value_usdc": "24953165"
+  },
+  {
+    "timestamp": 1783527300000,
+    "portfolio_value_usdc": "24935488"
+  },
+  {
+    "timestamp": 1783693800000,
+    "portfolio_value_usdc": "24767785"
+  },
+  {
+    "timestamp": 1783812600000,
+    "portfolio_value_usdc": "24614220"
+  },
+  {
+    "timestamp": 1783893600000,
+    "portfolio_value_usdc": "24474665"
+  },
+  {
+    "timestamp": 1783911600000,
+    "portfolio_value_usdc": "24279007"
+  },
+  {
+    "timestamp": 1783949400000,
+    "portfolio_value_usdc": "24131173"
+  },
+  {
+    "timestamp": 1784099700000,
+    "portfolio_value_usdc": "23973568"
+  },
+  {
+    "timestamp": 1784205000000,
+    "portfolio_value_usdc": "23809123"
+  },
+  {
+    "timestamp": 1784267100000,
+    "portfolio_value_usdc": "23647233"
+  },
+  {
+    "timestamp": 1784295000000,
+    "portfolio_value_usdc": "23492399"
+  },
+  {
+    "timestamp": 1784457900000,
+    "portfolio_value_usdc": "23415897"
+  },
+  {
+    "timestamp": 1784472300000,
+    "portfolio_value_usdc": "23361359"
+  },
+  {
+    "timestamp": 1784484000000,
+    "portfolio_value_usdc": "23209996"
+  },
+  {
+    "timestamp": 1784652300000,
+    "portfolio_value_usdc": "23044439"
+  },
+  {
+    "timestamp": 1784810700000,
+    "portfolio_value_usdc": "22897238"
+  }
+]

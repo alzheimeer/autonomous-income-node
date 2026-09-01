@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-18T15:01:05.796Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "e12ec70b-6801-4d68-9f4d-bee5112366ba",
+    "title": "AI content niche: The Year AI Stopped Waiting To Be Asked",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: The Year AI Stopped Waiting To Be Asked\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

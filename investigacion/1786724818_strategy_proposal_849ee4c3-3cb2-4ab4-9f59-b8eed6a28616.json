@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-14T16:26:58.595Z",
+  "priority": "P1",
+  "payload": {
+    "opportunityId": "849ee4c3-3cb2-4ab4-9f59-b8eed6a28616",
+    "title": "AI content niche: Even AI Can’t Fix A Poorly Informed Customer Service Message",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Even AI Can’t Fix A Poorly Informed Customer Service Message\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-17T22:30:52.360Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "e04179a8-6f7b-45ae-90ac-65adf54547f8",
+    "title": "AI content niche: The Quiet Edge of Leadership",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: The Quiet Edge of Leadership\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

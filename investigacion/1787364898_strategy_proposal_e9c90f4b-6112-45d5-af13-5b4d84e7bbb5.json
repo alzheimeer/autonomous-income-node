@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-22T02:14:58.423Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "e9c90f4b-6112-45d5-af13-5b4d84e7bbb5",
+    "title": "AI content niche: Living Planet Academy Lesson 20 — AI and the Environment: Can Artificial Intelli",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Living Planet Academy Lesson 20 — AI and the Environment: Can Artificial Intelli\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-21T19:04:42.103Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "965c0b03-0cc0-4189-b26e-5edd2989a3f0",
+    "title": "AI content niche: Beyond Simple Prompts: How I Built an Autonomous AI Paint Estimator in Google Cl",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Beyond Simple Prompts: How I Built an Autonomous AI Paint Estimator in Google Cl\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

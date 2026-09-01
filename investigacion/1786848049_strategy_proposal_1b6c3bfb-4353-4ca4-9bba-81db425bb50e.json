@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-16T02:40:49.879Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "1b6c3bfb-4353-4ca4-9bba-81db425bb50e",
+    "title": "AI content niche: Everything You Were Told About AI Is Fatally Wrong",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Everything You Were Told About AI Is Fatally Wrong\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

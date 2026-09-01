@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-15T15:44:31.807Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "2f6b44a8-e4cf-4e7a-b502-96378e5b8e97",
+    "title": "AI content niche: How Offshore Platforms Work: From Waves and Corrosion to AI",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: How Offshore Platforms Work: From Waves and Corrosion to AI\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

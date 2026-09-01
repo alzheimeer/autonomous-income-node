@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-15T12:17:35.065Z",
+  "priority": "P2",
+  "payload": {
+    "opportunityId": "8f3cda6e-d386-47e3-a6a5-9f4153afa35a",
+    "title": "AI content niche: How the AI Revolution Quietly Rebuilt the Internet for Bots, Not Humans",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: How the AI Revolution Quietly Rebuilt the Internet for Bots, Not Humans\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

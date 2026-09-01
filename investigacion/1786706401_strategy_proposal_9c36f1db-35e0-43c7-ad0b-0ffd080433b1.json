@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-14T11:20:01.520Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "9c36f1db-35e0-43c7-ad0b-0ffd080433b1",
+    "title": "AI content niche: How Self-Attention Works in Large Language Models: Explained with Simple Example",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: How Self-Attention Works in Large Language Models: Explained with Simple Example\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

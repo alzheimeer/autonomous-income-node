@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-15T03:46:28.116Z",
+  "priority": "P2",
+  "payload": {
+    "opportunityId": "29b4bab8-c235-42b9-8cf7-1647047168d5",
+    "title": "AI content niche: When Explanations Increase Automation Bias",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: When Explanations Increase Automation Bias\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

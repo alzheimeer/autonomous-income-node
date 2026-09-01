@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-17T00:15:53.011Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "7090292b-f56c-4595-afe3-00f25dddad0f",
+    "title": "AI content niche: I Told Claude Code to “Work the Overdue Tickets.” It Did.",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: I Told Claude Code to “Work the Overdue Tickets.” It Did.\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

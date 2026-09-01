@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-16T17:23:17.106Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "db2fec04-b8ac-42fe-9cc3-2dd9790d4915",
+    "title": "AI content niche: ML Series #2: Data Preprocessing and Feature Engineering — The Part of Machine L",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: ML Series #2: Data Preprocessing and Feature Engineering — The Part of Machine L\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

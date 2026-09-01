@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-19T03:21:35.613Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "e52520a2-e769-4b1c-8c1c-eb1ff23005ac",
+    "title": "AI content niche: Your AI Is Writing for a Machine. You Are the One Who Has to Read It.",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Your AI Is Writing for a Machine. You Are the One Who Has to Read It.\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

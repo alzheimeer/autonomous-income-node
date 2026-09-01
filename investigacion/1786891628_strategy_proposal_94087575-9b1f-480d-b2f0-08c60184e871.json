@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-16T14:47:08.882Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "94087575-9b1f-480d-b2f0-08c60184e871",
+    "title": "AI content niche: Your Model Advertises 1M Tokens. It Breaks at 130K",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Your Model Advertises 1M Tokens. It Breaks at 130K\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

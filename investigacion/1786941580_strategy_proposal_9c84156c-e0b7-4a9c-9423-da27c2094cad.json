@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-17T04:39:40.243Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "9c84156c-e0b7-4a9c-9423-da27c2094cad",
+    "title": "AI content niche: How is Artificial Intelligence changing Digital Marketing?",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: How is Artificial Intelligence changing Digital Marketing?\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

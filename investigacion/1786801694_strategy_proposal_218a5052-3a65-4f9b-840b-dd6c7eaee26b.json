@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-15T13:48:14.670Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "218a5052-3a65-4f9b-840b-dd6c7eaee26b",
+    "title": "AI content niche: PM Modi’s I-Day Speech 2026: Why AI Skills Could Shape India’s Future",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: PM Modi’s I-Day Speech 2026: Why AI Skills Could Shape India’s Future\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

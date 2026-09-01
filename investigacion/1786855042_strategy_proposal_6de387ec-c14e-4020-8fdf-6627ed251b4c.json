@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-16T04:37:22.639Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "6de387ec-c14e-4020-8fdf-6627ed251b4c",
+    "title": "AI content niche: The AI Money Secret Nobody Talks About: It’s Not About Using AI",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: The AI Money Secret Nobody Talks About: It’s Not About Using AI\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

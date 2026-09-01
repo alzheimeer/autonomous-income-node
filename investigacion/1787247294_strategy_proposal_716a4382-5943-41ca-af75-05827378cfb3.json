@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-20T17:34:54.800Z",
+  "priority": "P1",
+  "payload": {
+    "opportunityId": "716a4382-5943-41ca-af75-05827378cfb3",
+    "title": "AI content niche: The System Around Agent’s Memory",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: The System Around Agent’s Memory\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

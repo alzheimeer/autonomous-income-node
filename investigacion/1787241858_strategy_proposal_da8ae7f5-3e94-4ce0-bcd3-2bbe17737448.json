@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-20T16:04:18.576Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "da8ae7f5-3e94-4ce0-bcd3-2bbe17737448",
+    "title": "AI content niche: Yapay Zekâ Gerçekten Düşünüyor mu, Yoksa Sadece Çok İyi Bir İstatistikçi mi?",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Yapay Zekâ Gerçekten Düşünüyor mu, Yoksa Sadece Çok İyi Bir İstatistikçi mi?\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

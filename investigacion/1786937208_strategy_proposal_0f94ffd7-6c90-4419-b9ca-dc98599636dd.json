@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-17T03:26:48.943Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "0f94ffd7-6c90-4419-b9ca-dc98599636dd",
+    "title": "AI content niche: Claude 3.7 Sonnet vs DeepSeek R1: The AI Battle That Changed Coding Forever",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Claude 3.7 Sonnet vs DeepSeek R1: The AI Battle That Changed Coding Forever\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

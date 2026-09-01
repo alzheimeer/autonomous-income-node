@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-20T16:04:16.497Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "1942eb0b-9268-4b7b-9318-f0229c54722f",
+    "title": "AI content niche: Who Actually Pays for Open Weights When Labs Stop Shipping Small Models?",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Who Actually Pays for Open Weights When Labs Stop Shipping Small Models?\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "ack",
+  "originalId": "960d1f27-e8e1-4dca-9f12-cf6e8806c1fe",
+  "status": "failed",
+  "error": "AdaptiveEvolver not initialized — proposal ignored"
+}

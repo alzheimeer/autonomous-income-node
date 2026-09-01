@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-15T09:57:23.501Z",
+  "priority": "P2",
+  "payload": {
+    "opportunityId": "71a2bc74-a4b2-453e-86e6-cdcf64bca680",
+    "title": "AI content niche: Stop Building AI Chatbots — Build These AI Applications Instead",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Stop Building AI Chatbots — Build These AI Applications Instead\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

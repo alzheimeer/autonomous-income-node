@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-19T15:47:17.188Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "a38ad980-40bd-49e5-a100-c20dc3b9a2a8",
+    "title": "AI content niche: You Don’t Need to Be an AI Expert to Build Something Real — Here’s Proof",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: You Don’t Need to Be an AI Expert to Build Something Real — Here’s Proof\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-20T00:12:11.058Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "dd86ec28-6b5b-4179-92c2-99128d321118",
+    "title": "AI content niche: There’s a 20% AI Tax Coming. Nobody’s Told Your CFO Yet.",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: There’s a 20% AI Tax Coming. Nobody’s Told Your CFO Yet.\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

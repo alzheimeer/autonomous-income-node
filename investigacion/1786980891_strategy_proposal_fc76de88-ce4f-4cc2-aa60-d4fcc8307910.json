@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-17T15:34:51.584Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "fc76de88-ce4f-4cc2-aa60-d4fcc8307910",
+    "title": "AI content niche: What AI Really Knows: Episode 2",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: What AI Really Knows: Episode 2\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

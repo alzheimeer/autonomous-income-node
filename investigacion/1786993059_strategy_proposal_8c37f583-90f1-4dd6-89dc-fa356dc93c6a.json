@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-17T18:57:39.704Z",
+  "priority": "P1",
+  "payload": {
+    "opportunityId": "8c37f583-90f1-4dd6-89dc-fa356dc93c6a",
+    "title": "AI content niche: There’s Already a Startup Selling Insurance for AI Agents",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: There’s Already a Startup Selling Insurance for AI Agents\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

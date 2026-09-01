@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-20T00:12:14.111Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "a0599d5d-31e2-412c-93ab-631c9ad9ce4c",
+    "title": "AI content niche: When You Add Documents to RAG, Does the AI Actually Learn Them?",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: When You Add Documents to RAG, Does the AI Actually Learn Them?\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

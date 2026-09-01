@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-15T20:31:22.621Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "f823352f-6d24-44e2-af8a-455c07832cd6",
+    "title": "AI content niche: The Wild Horse in the Codebase: Why “Good Enough” AI Is a Quiet Crisis for Craft",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: The Wild Horse in the Codebase: Why “Good Enough” AI Is a Quiet Crisis for Craft\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-20T14:15:30.571Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "61433d07-1298-4c94-a63b-9e4a3aa45cb1",
+    "title": "AI content niche: To the Soon-to-Be Graduates: Don’t Panic About AI",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: To the Soon-to-Be Graduates: Don’t Panic About AI\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

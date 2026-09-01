@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-14T17:49:43.955Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "da17c391-45cb-429d-a031-0ca0d4c48e08",
+    "title": "AI content niche: AI Isn’t Replacing Creators in 2026 — But Creators Who Ignore AI May Fall Behind",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: AI Isn’t Replacing Creators in 2026 — But Creators Who Ignore AI May Fall Behind\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

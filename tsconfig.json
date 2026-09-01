@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "@agent/*": ["./src/agent/*"],
+      "@heartbeat/*": ["./src/heartbeat/*"],
+      "@identity/*": ["./src/identity/*"],
+      "@survival/*": ["./src/survival/*"],
+      "@strategies/*": ["./src/strategies/*"],
+      "@self-mod/*": ["./src/self-mod/*"],
+      "@replication/*": ["./src/replication/*"],
+      "@social/*": ["./src/social/*"],
+      "@mcp/*": ["./src/mcp/*"],
+      "@payments/*": ["./src/payments/*"],
+      "@state/*": ["./src/state/*"],
+      "@config/*": ["./src/config/*"],
+      "@dashboard/*": ["./src/dashboard/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts"]
+}

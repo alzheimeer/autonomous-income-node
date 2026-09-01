@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-19T15:47:15.348Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "24491320-7745-49e5-8f82-2896c8fc7a1d",
+    "title": "AI content niche: Beyond the Classroom: How Students Can Build Future-Ready Skills Through AI, Inn",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Beyond the Classroom: How Students Can Build Future-Ready Skills Through AI, Inn\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-18T08:21:01.213Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "f75b7298-f668-45ae-838f-11a30bba4189",
+    "title": "AI content niche: Claude’s Text Watermark Is Live. Here’s What Actually Survives an Edit",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Claude’s Text Watermark Is Live. Here’s What Actually Survives an Edit\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

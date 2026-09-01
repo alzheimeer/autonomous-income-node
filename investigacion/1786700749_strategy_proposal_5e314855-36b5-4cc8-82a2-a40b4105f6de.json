@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-14T09:45:49.175Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "5e314855-36b5-4cc8-82a2-a40b4105f6de",
+    "title": "AI content niche: LLM Inference Cost: Why Your AI Bill Keeps Growing",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: LLM Inference Cost: Why Your AI Bill Keeps Growing\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

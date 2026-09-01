@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-18T08:20:59.026Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "126287bd-2f6a-4aa0-b681-27db332e1e5c",
+    "title": "AI content niche: You Don’t Need to Test 100 LLMs on Your Mac.",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: You Don’t Need to Test 100 LLMs on Your Mac.\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

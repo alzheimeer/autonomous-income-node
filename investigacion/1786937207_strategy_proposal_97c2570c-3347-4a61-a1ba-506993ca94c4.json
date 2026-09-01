@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-17T03:26:47.344Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "97c2570c-3347-4a61-a1ba-506993ca94c4",
+    "title": "AI content niche: Instruction Sovereignty in Large Language Models",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Instruction Sovereignty in Large Language Models\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

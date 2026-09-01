@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-14T04:11:46.614Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "8301fff9-2e66-46c4-b540-2ecbb796fc42",
+    "title": "AI content niche: I Stopped Checking My Rankings and Started Checking If AI Even Knows I Exist.",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: I Stopped Checking My Rankings and Started Checking If AI Even Knows I Exist.\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

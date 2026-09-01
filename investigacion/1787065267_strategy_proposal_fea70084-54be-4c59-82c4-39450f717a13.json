@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-18T15:01:07.834Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "fea70084-54be-4c59-82c4-39450f717a13",
+    "title": "AI content niche: La ilusión del metro cuadrado: Por qué el desarrollo inmobiliario tradicional es",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: La ilusión del metro cuadrado: Por qué el desarrollo inmobiliario tradicional es\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

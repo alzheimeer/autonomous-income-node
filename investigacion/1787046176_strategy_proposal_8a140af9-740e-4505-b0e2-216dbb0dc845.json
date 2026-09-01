@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-18T09:42:56.951Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "8a140af9-740e-4505-b0e2-216dbb0dc845",
+    "title": "AI content niche: When Logistic Regression Beat Deep Learning in Human Activity Recognition",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: When Logistic Regression Beat Deep Learning in Human Activity Recognition\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

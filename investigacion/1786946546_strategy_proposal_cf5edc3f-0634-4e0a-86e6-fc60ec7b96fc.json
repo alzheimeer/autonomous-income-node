@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-17T06:02:26.427Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "cf5edc3f-0634-4e0a-86e6-fc60ec7b96fc",
+    "title": "AI content niche: The AI Skills Gap in 2026: Why Knowing AI Isn’t the Same as Being Good at Using ",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: The AI Skills Gap in 2026: Why Knowing AI Isn’t the Same as Being Good at Using \"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

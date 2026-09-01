@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-16T13:31:56.072Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "0c339fc9-7210-4473-87c3-c7fdc92154a8",
+    "title": "AI content niche: Stop Asking AI to Design Your .NET MAUI UI. Teach It Your Design System Instead.",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Stop Asking AI to Design Your .NET MAUI UI. Teach It Your Design System Instead.\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

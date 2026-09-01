@@ -1,0 +1,14 @@
+node_modules
+dist
+.env
+.env.*
+keys/
+data/
+references/
+*.log
+.git
+.gitignore
+owner-credentials.md
+README.md
+*.md
+!constitution.md

@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-19T11:35:24.661Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "d308e2da-23d6-4416-85b9-023d614bc2be",
+    "title": "AI content niche: Why AI-Generated Code Fails in Production",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Why AI-Generated Code Fails in Production\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

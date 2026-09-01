@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-17T20:32:44.782Z",
+  "priority": "P2",
+  "payload": {
+    "opportunityId": "2e47221a-55ee-4d3d-98e1-86d4770e070b",
+    "title": "AI content niche: ChatGPT vs Claude: Which AI Chatbot Is Actually Better in 2026?",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: ChatGPT vs Claude: Which AI Chatbot Is Actually Better in 2026?\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

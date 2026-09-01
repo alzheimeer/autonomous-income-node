@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-17T04:39:41.708Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "77112e3a-520d-4649-8608-c0f911416c8c",
+    "title": "AI content niche: I Built an AI Tool to Find Makeup Dupes — Then Had to Stop It From Lying",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: I Built an AI Tool to Find Makeup Dupes — Then Had to Stop It From Lying\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

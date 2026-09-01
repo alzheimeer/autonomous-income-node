@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-17T09:11:21.901Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "aea2cd75-a9ed-401d-9ceb-d02a3bc917da",
+    "title": "AI content niche: The Psychology Behind Institutional Investing: Why the Best Investment Decisions",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: The Psychology Behind Institutional Investing: Why the Best Investment Decisions\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

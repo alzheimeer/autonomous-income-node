@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-14T19:50:02.079Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "14652157-84e5-40cc-8cd1-b91c2c0796bc",
+    "title": "AI content niche: Project Management Is Moving Up the Value Chain",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Project Management Is Moving Up the Value Chain\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

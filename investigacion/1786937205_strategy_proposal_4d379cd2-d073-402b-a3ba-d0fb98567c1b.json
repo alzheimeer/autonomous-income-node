@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-17T03:26:45.720Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "4d379cd2-d073-402b-a3ba-d0fb98567c1b",
+    "title": "AI content niche: Most people want real skills, faster results, and a clear path to a better job w",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Most people want real skills, faster results, and a clear path to a better job w\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

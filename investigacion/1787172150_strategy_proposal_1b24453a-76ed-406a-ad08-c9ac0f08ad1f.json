@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-19T20:42:30.724Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "1b24453a-76ed-406a-ad08-c9ac0f08ad1f",
+    "title": "AI content niche: Your AI Says “No”? Meet Abliteration — the One Weird Trick That Actually Is One ",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Your AI Says “No”? Meet Abliteration — the One Weird Trick That Actually Is One \"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

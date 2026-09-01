@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-20T02:46:12.194Z",
+  "priority": "P2",
+  "payload": {
+    "opportunityId": "9831be01-39d6-47a9-80f8-0ab997f479bf",
+    "title": "AI content niche: RAG for Beginners: How a PDF Turns Into an AI Chatbot",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: RAG for Beginners: How a PDF Turns Into an AI Chatbot\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

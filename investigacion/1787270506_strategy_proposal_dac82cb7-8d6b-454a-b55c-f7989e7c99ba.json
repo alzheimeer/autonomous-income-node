@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-21T00:01:46.543Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "dac82cb7-8d6b-454a-b55c-f7989e7c99ba",
+    "title": "AI content niche: Japan’s AI Paradox: Semiconductor Orders Are Booming While Corporate AI Adoption",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Japan’s AI Paradox: Semiconductor Orders Are Booming While Corporate AI Adoption\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-16T08:38:38.979Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "bbe0622e-4acb-47e0-841b-6b4df25fa3a2",
+    "title": "AI content niche: Navigating the AI Frontier: An Investor’s Guide to Governance, Risk Mitigation, ",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Navigating the AI Frontier: An Investor’s Guide to Governance, Risk Mitigation, \"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}

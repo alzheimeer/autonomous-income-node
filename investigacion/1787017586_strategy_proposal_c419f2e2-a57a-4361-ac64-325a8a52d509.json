@@ -1,0 +1,12 @@
+{
+  "type": "strategy_proposal",
+  "timestamp": "2026-08-18T01:46:26.048Z",
+  "priority": "P3",
+  "payload": {
+    "opportunityId": "c419f2e2-a57a-4361-ac64-325a8a52d509",
+    "title": "AI content niche: Top 5 Bolt AI Alternatives for 2026",
+    "implementation": "// TODO: Implement strategy for \"AI content niche: Top 5 Bolt AI Alternatives for 2026\"\n// Source: content-platform\n// Revenue: $0.50-5/article (Medium Partner)",
+    "testCommand": "pnpm test -- --run",
+    "requiresRestart": false
+  }
+}
