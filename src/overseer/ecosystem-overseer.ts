@@ -55,9 +55,14 @@ Datos actuales del departamento de contenido (OmniAI-Engine):
 - Likes Totales: ${omniStats.totalLikes}
 - Tiempo de Reproducción Estimado: ${projectedWatchTimeHours.toFixed(2)} horas (Meta para monetizar: 4000 horas o 10M views en Shorts).
 
-Haz un análisis crudo y directo de 2 párrafos:
-1. ¿Vamos por buen camino? Si los números son bajos (ej: 0 vistas, 0 videos), dínoslo claro.
-2. ¿Qué ajuste estratégico deberíamos hacer en el contenido o en el SEO para acelerar el despegue?
+⚠️ REGLAS CRÍTICAS DE ESTRATEGIA (YouTube Algorithm Guardrails):
+- NUNCA recomiendes hacer spam publicando múltiples Shorts al día en un canal nuevo. Eso activará los filtros anti-bot de YouTube y matará el alcance para siempre (Shadowban).
+- Comprende el "Warm-up period": Un canal nuevo necesita consistencia (ej: 1 short diario, bien espaciado) para ganar la confianza del algoritmo.
+- Si tenemos 0 vistas y pocos videos, NO es un fracaso, es la fase de indexación normal de YouTube. El algoritmo puede tardar semanas en probar el contenido.
+
+Haz un análisis inteligente de 2 párrafos:
+1. ¿En qué fase de maduración crees que estamos basándote en los datos? Evalúa la salud de la métrica (sin entrar en pánico si son pocos videos).
+2. ¿Qué ajuste estratégico deberíamos hacer en la temática del contenido (SEO) o en la estructura visual, respetando el crecimiento orgánico?
 `;
 
     try {
