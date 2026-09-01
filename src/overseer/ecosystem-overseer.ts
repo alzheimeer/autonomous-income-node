@@ -55,6 +55,10 @@ DATOS ACTUALES DEL DEPARTAMENTO DE CONTENIDO (OmniAI-Engine):
 - Interacciones (Likes): ${omniStats.totalLikes}
 - Tiempo de Reproducción Proyectado: ${projectedWatchTimeHours.toFixed(2)} horas (Meta de monetización: 4000 horas o 10M views en Shorts).
 
+INDUSTRY BENCHMARKING (Tus Competidores):
+- En YouTube Automation (ej. AutoShorts.ai): La métrica ganadora actual es la Omnicanalidad (publicar el mismo video en TikTok y Reels) y el Batching.
+- En Trading Bots (ej. Maestro, Unibot): La retención del usuario se logra mediante Alertas y Centro de Comando en tiempo real.
+
 ⚠️ REGLAS CRÍTICAS DE ESTRATEGIA (Algoritmo de YouTube & Anti-Spam):
 - NUNCA recomiendes tácticas de spam (ej: publicar múltiples Shorts al día en un canal nuevo). Esto activa los filtros anti-bot, reduce el Trust Score y provoca Shadowban.
 - Comprende el "Warm-up period" (Fase de Calentamiento): Un canal nuevo requiere consistencia orgánica (ej: 1 short diario, máximo 2, bien espaciados) para construir autoridad en el algoritmo.
@@ -63,7 +67,7 @@ DATOS ACTUALES DEL DEPARTAMENTO DE CONTENIDO (OmniAI-Engine):
 INSTRUCCIONES DE ANÁLISIS:
 Realiza una auditoría estratégica estructurada en 2 párrafos concisos y de alto nivel técnico:
 1. DIAGNÓSTICO DE MADURACIÓN: Evalúa fríamente la fase actual del canal basándote en los datos. No entres en pánico si las métricas son bajas; interprétalas a través del lente del "warm-up" de YouTube.
-2. OPTIMIZACIÓN SEO Y ESTRATEGIA: Propón un ajuste hiper-específico. Habla de retención de audiencia (hooks de 3 segundos), agrupación temática (clustering de keywords), CTR de miniaturas o redirección de tráfico (Shorts a Long-form) respetando estrictamente el crecimiento orgánico.
+2. OPTIMIZACIÓN SEO Y BENCHMARKING: Propón un ajuste hiper-específico (hooks, clustering, CTR). Además, exige qué función deberíamos priorizar (ej. implementar posteo cruzado a TikTok o automatización Batch) para igualar a los gigantes de la industria.
 `;
 
     try {

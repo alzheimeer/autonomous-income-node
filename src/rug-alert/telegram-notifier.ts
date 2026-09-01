@@ -14,6 +14,7 @@
 import { createLogger } from '../logger.js';
 import type { TelegramClient } from '../social/telegram-client.js';
 import type { AlertEvent } from './types.js';
+import { TradingNotifier } from '../infrastructure/trading-notifier.js';
 
 // ─── Constants ───────────────────────────────────────────────────────────────
 
@@ -105,7 +106,15 @@ export class TelegramNotifier {
   /** Timestamp of the last successfully sent message (ms), for suppression summary. */
   private lastSentAt: number | null = null;
 
-  constructor(private readonly telegramClient: TelegramClient) {}
+  /** The wrapped TradingNotifier. */
+  private readonly tradingNotifier: TradingNotifier;
+
+  /**
+   * @param client - (Deprecated) The mock TelegramClient.
+   */
+  constructor(private readonly client: TelegramClient) {
+    this.tradingNotifier = new TradingNotifier();
+  }
 
   // ── Public API ─────────────────────────────────────────────────────────────
 
@@ -193,6 +202,16 @@ export class TelegramNotifier {
     this.suppressionQueue.push(event);
   }
 
+  private async doSend(text: string): Promise<boolean> {
+    try {
+      await this.tradingNotifier.alert('⚠️ ALERTA DEL SISTEMA', text, 'warning');
+      return true;
+    } catch (err) {
+      log.warn(`Failed to send alert via TradingNotifier: ${err instanceof Error ? err.message : String(err)}`);
+      return false;
+    }
+  }
+
   /**
    * Sends an alert (with optional suppression summary prepended), recording
    * the timestamp on success.
@@ -210,24 +229,21 @@ export class TelegramNotifier {
       message = `${summary}\n\n${message}`;
     }
 
-    let lastError: unknown;
     for (let attempt = 1; attempt <= 2; attempt++) {
-      try {
-        await this.telegramClient.sendMessage(message);
+      const success = await this.doSend(message);
+      if (success) {
         // Success — record timestamp and update lastSentAt.
         const now = Date.now();
         this.sentTimestamps.push(now);
         this.lastSentAt = now;
         return;
-      } catch (err) {
-        lastError = err;
-        if (attempt === 1) {
-          log.warn('TelegramNotifier: send attempt 1 failed, retrying once', {
-            reason: event.reason,
-            contractAddress: event.contractAddress,
-            error: err instanceof Error ? err.message : String(err),
-          });
-        }
+      }
+      
+      if (attempt === 1) {
+        log.warn('TelegramNotifier: send attempt 1 failed, retrying once', {
+          reason: event.reason,
+          contractAddress: event.contractAddress,
+        });
       }
     }
 
@@ -236,7 +252,6 @@ export class TelegramNotifier {
       timestamp: new Date().toISOString(),
       reason: event.reason,
       contractAddress: event.contractAddress,
-      error: lastError instanceof Error ? lastError.message : String(lastError),
     });
   }
 }
