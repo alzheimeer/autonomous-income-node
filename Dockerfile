@@ -17,15 +17,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Copiar configuración del workspace primero (para cachear la capa de dependencias)
 COPY pnpm-workspace.yaml package.json pnpm-lock.yaml* ./
-COPY packages/cli/package.json ./packages/cli/
 
 # Instalar todas las dependencias (incluyendo devDeps para compilación)
 RUN pnpm install --frozen-lockfile || pnpm install
 
 # Copiar todo el código fuente
-COPY tsconfig.json tsconfig.build.json ./
+COPY tsconfig.json tsconfig.build.json tsconfig.research.json ./
 COPY src/ ./src/
-COPY packages/ ./packages/
 COPY constitution.md ./
 
 # Compilar TypeScript → dist/

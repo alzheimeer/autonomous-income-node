@@ -1,75 +1,24 @@
-version: '3.9'
-
 services:
-  # ── PostgreSQL (TimescaleDB) ─────────────────────────────────────────────────
-  postgres:
-    image: timescale/timescaledb:latest-pg16
-    container_name: ain-postgres
-    restart: unless-stopped
-    environment:
-      POSTGRES_USER: ${DB_USER:-postgres}
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
-      POSTGRES_DB: ${DB_NAME:-ain_trading}
-    ports:
-      - "5433:5432"
-    volumes:
-      - postgres-data:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-postgres}"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-    networks:
-      - ain-network
-
-  # ── Redis ────────────────────────────────────────────────────────────────────
-  redis:
-    image: redis:7-alpine
-    container_name: ain-redis
-    restart: unless-stopped
-    ports:
-      - "6379:6379"
-    command: redis-server --save 60 1 --loglevel warning --maxmemory 256mb --maxmemory-policy noeviction
-    volumes:
-      - redis-data:/data
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 3s
-      retries: 3
-    networks:
-      - ain-network
-
-  # ── Autonomous Income Node Agent ─────────────────────────────────────────────
-  agent:
+  # ── Autonomous Research & Intelligence Node ────────────────────────────────
+  research:
     build:
       context: .
       dockerfile: Dockerfile
       target: production
-    image: autonomous-income-node:latest
-    container_name: ain-agent
+    image: autonomous-research-node:latest
+    container_name: ain-research-agent
     restart: unless-stopped
     env_file: .env
     environment:
-      # Overrides de docker-compose (toman prioridad sobre .env)
       - NODE_TLS_REJECT_UNAUTHORIZED=0
-      - OKX_HEARTBEAT_ENABLED=false
-      # Apuntar al servicio postgres interno del compose (no al localhost del host)
-      - DB_HOST=ain-postgres
-      - DB_PORT=5432
-      - REDIS_URL=redis://ain-redis:6379
+      - RESEARCH_DASHBOARD_PORT=3002
     ports:
-      - "${API_PORT:-3000}:3000"
-      - "3001:3001"
-      - "${METRICS_PORT:-9090}:9090"
+      - "3002:3002"
     volumes:
       - ./data:/app/data
-      - ./keys:/app/keys
       - ./investigacion:/app/investigacion
-      # Docker socket para replicación de agentes hijo
-      - //./pipe/docker_engine:/var/run/docker.sock
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:3002/health"]
       interval: 30s
       timeout: 5s
       retries: 3
@@ -77,72 +26,6 @@ services:
     logging:
       driver: json-file
       options:
-        max-size: "100m"
-        max-file: "5"
-    depends_on:
-      postgres:
-        condition: service_healthy
-      redis:
-        condition: service_healthy
-    networks:
-      - ain-network
-
-  # ── Copy-Trading Smart Money ─────────────────────────────────────────────────
-  copy-trading:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      target: production
-    image: autonomous-income-node:latest
-    container_name: ain-copy-trading
-    restart: unless-stopped
-    env_file: .env
-    environment:
-      # Apuntar a PostgreSQL interno del compose
-      - DB_HOST=ain-postgres
-      - DB_PORT=5432
-      - NODE_TLS_REJECT_UNAUTHORIZED=0
-      # Puerto de la API de copy-trading
-      - COPY_TRADING_API_PORT=3004
-      # WebSocket URL para Alchemy Base mainnet (WSS para streaming de bloques en tiempo real)
-      # Si no está seteado, usa RPC_PROVIDER_URL del .env como fallback (HTTP → polling mode)
-      - COPY_WS_RPC_URL=wss://base-mainnet.g.alchemy.com/v2/alch_TY5dFXF1v9Pnwv7198NCD
-      # Capital inicial del copy-trading
-      - COPY_INITIAL_CAPITAL_USDC=500
-      # API key para endpoints mutantes (usa la misma del agente principal)
-      - COPY_API_KEY=${OPERATOR_API_KEY}
-      # Wallets seed de smart money verificadas en Base (heredadas del .env)
-      - COPY_SEED_WALLETS=${COPY_SEED_WALLETS}
-    ports:
-      - "3004:3004"
-    volumes:
-      - ./data:/app/data
-      - ./keys:/app/keys
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3004/copy/status"]
-      interval: 30s
-      timeout: 5s
-      retries: 3
-      start_period: 45s
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "5"
-    depends_on:
-      postgres:
-        condition: service_healthy
-    networks:
-      - ain-network
-    # Override CMD para usar el bootstrap del copy-trading
-    command: ["node", "dist/copy-trading/bootstrap.js"]
-
-volumes:
-  redis-data:
-    driver: local
-  postgres-data:
-    driver: local
-
-networks:
-  ain-network:
-    driver: bridge
+        max-size: "50m"
+        max-file: "3"
+    command: ["node", "dist/research/index.js"]

@@ -20,6 +20,7 @@ import type { ResearchDatabase } from './state/database.js';
 import type { IResearchScanner, RawOpportunity } from './scanners/types.js';
 import { ScoringEngine } from './scoring.js';
 import { Categorizer } from './categorizer.js';
+import { DeepAuditorEngine } from './deep-auditor.js';
 import { CommsWriter } from './comms/writer.js';
 import { CommsReader } from './comms/reader.js';
 import { AlertSystem } from './alerts.js';
@@ -71,6 +72,7 @@ export class ResearchEngine {
   private readonly commsReader: CommsReader;
   private readonly alertSystem: AlertSystem;
   private readonly approvalGate: ApprovalGate;
+  private readonly deepAuditor: DeepAuditorEngine;
   private readonly scanners: IResearchScanner[];
 
   private state: EngineState = 'idle';
@@ -87,6 +89,7 @@ export class ResearchEngine {
     this.commsReader = new CommsReader();
     this.alertSystem = new AlertSystem();
     this.approvalGate = approvalGate;
+    this.deepAuditor = new DeepAuditorEngine();
 
     this.scanners = [
       new MarketplaceScanner(),
@@ -302,17 +305,54 @@ export class ResearchEngine {
         }
       }
 
-      // ── Phase 5: Alerts ────────────────────────────────────────────────
+      // ── Phase 5: Deep Audit & Telegram Alerts (Exclusively Verified) ───
       this.state = 'communicating';
       this.alertSystem.resetCycle();
 
-      const actionable = this.db.all<{ title: string; score: number; priority: string }>(
-        "SELECT title, score, priority FROM opportunities WHERE discovered_at >= ? AND score >= ?",
+      const actionable = this.db.all<{ id: string; title: string; score: number; priority: string; description: string; category: string; source_url: string | null }>(
+        "SELECT id, title, score, priority, description, category, source_url FROM opportunities WHERE discovered_at >= ? AND score >= ?",
         startedAt,
         this.config.minScoreForAction,
       );
 
-      await this.alertSystem.checkAndAlert(actionable);
+      for (const opp of actionable) {
+        const audit = await this.deepAuditor.auditOpportunity({
+          id: opp.id,
+          title: opp.title,
+          description: opp.description,
+          category: opp.category,
+          sourceUrl: opp.source_url ?? undefined,
+          rawScore: opp.score,
+        });
+
+        // Actualizar oportunidad con resultado de auditoría
+        if (audit.verdict === 'REJECTED_HISTORICAL' || audit.verdict === 'REJECTED_SCAM') {
+          this.db.run(
+            'UPDATE opportunities SET status = ?, reasoning = ? WHERE id = ?',
+            'descartada',
+            `[AUDIT RECHAZADO: ${audit.verdict}] ${audit.summaryConclusion}`,
+            opp.id
+          );
+        } else if (audit.verdict === 'VERIFIED_LEGIT') {
+          this.db.run(
+            'UPDATE opportunities SET status = ?, score = ?, reasoning = ? WHERE id = ?',
+            'verificada_legitima',
+            audit.trustScore,
+            `[AUDIT VERIFICADO] ${audit.summaryConclusion}`,
+            opp.id
+          );
+
+          // Enviar dossier exclusivo a Telegram
+          await this.alertSystem.sendAuditedDossier({
+            id: opp.id,
+            title: opp.title,
+            description: opp.description,
+            category: opp.category,
+            sourceUrl: opp.source_url ?? undefined,
+            rawScore: opp.score,
+          }, audit);
+        }
+      }
 
       // ── Phase 6: Update master_log ─────────────────────────────────────
       this.categorizer.generateMasterLog();

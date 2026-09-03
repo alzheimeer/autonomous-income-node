@@ -1,25 +1,19 @@
 /**
- * AlertSystem — Sends Telegram alerts after scan cycles.
- *
- * Rules:
- * - 3+ opportunities with score ≥ 70 in same cycle → batch alert
- * - 1 opportunity with score ≥ 90 → immediate individual alert
- * - Max 1 batch alert per cycle
+ * AlertSystem — Envío exclusivo de Dossiers Auditados y Verificados a Telegram.
+ * 
+ * Regla Estricta:
+ * Ya NO se envían alertas de oportunidades crudas.
+ * Únicamente se notifica cuando una oportunidad pasa la Fase 2 (DeepAuditorEngine)
+ * con veredicto 'VERIFIED_LEGIT' y un Trust Score superior a 85.
  */
 
 import axios from 'axios';
-
-export interface AlertOpportunity {
-  title: string;
-  score: number;
-  priority: string;
-}
+import type { AuditResult, AuditInput } from './deep-auditor.js';
 
 export class AlertSystem {
   private readonly botToken: string;
   private readonly chatId: string;
   private readonly isMock: boolean;
-  private batchSentThisCycle = false;
 
   constructor() {
     this.botToken = process.env['TELEGRAM_BOT_TOKEN'] ?? '';
@@ -27,66 +21,56 @@ export class AlertSystem {
     this.isMock = !this.botToken || !this.chatId;
   }
 
-  /**
-   * Reset cycle state — call at start of each scan cycle.
-   */
-  resetCycle(): void {
-    this.batchSentThisCycle = false;
+  public resetCycle(): void {
+    // No-op en nueva arquitectura
   }
 
   /**
-   * Check opportunities and send alerts if criteria met.
+   * Notifica a Telegram ÚNICAMENTE un dossier de oportunidad completamente auditada y legítima
    */
-  async checkAndAlert(opportunities: AlertOpportunity[]): Promise<void> {
-    // Individual alerts for score ≥ 90
-    const exceptional = opportunities.filter((o) => o.score >= 90);
-    for (const opp of exceptional) {
-      await this.sendIndividualAlert(opp);
+  public async sendAuditedDossier(opp: AuditInput, audit: AuditResult): Promise<void> {
+    if (audit.verdict !== 'VERIFIED_LEGIT' || audit.trustScore < 85) {
+      console.log(`[AlertSystem] 🔕 Oportunidad "${opp.title}" descartada para Telegram (Veredicto: ${audit.verdict}, Score: ${audit.trustScore})`);
+      return;
     }
 
-    // Batch alert for 3+ score ≥ 70
-    const viable = opportunities.filter((o) => o.score >= 70);
-    if (viable.length >= 3 && !this.batchSentThisCycle) {
-      await this.sendBatchAlert(viable);
-      this.batchSentThisCycle = true;
-    }
-  }
+    const steps = audit.actionableSteps?.map((s, i) => `${i + 1}. ${s}`).join('\n') || 'N/A';
+    const evidenceList = audit.evidenceCollected.map(e => `• [${e.sourceType.toUpperCase()}] ${e.description}`).join('\n');
 
-  private async sendIndividualAlert(opp: AlertOpportunity): Promise<void> {
     const message = [
-      `🚨 OPORTUNIDAD EXCEPCIONAL 🚨`,
+      `🛡️ *DOSSIER DE INVESTIGACIÓN AUDITADO Y VERIFICADO* 🛡️`,
       ``,
-      `🏆 ${opp.title}`,
-      `📊 Score: ${opp.score}/100`,
-      `🏷️ Prioridad: ${opp.priority}`,
+      `🎯 *Oportunidad:* ${opp.title}`,
+      `📂 *Categoría:* ${opp.category}`,
+      `⭐ *Puntaje de Confianza:* ${audit.trustScore}/100`,
+      `🔍 *Factibilidad Técnica:* ${audit.technicalFeasibility}`,
+      `💰 *Demanda Económica:* ${audit.economicModelViability}`,
       ``,
-      `Revisa el dashboard: http://localhost:3002/opportunities`,
-    ].join('\n');
+      `📋 *Conclusión de la Auditoría:*`,
+      `${audit.summaryConclusion}`,
+      ``,
+      `📊 *Evidencia & Verificación:*`,
+      evidenceList,
+      ``,
+      `🚀 *Siguientes Pasos Recomendados:*`,
+      steps,
+      ``,
+      opp.sourceUrl ? `🔗 *Fuente Verificada:* ${opp.sourceUrl}` : '',
+      `━━━━━━━━━━━━━━━━━━━━━━━━━━`,
+      `_Filtro Anti-Estafas y Memoria Histórica Aprobados_`
+    ].filter(Boolean).join('\n');
 
     await this.sendTelegram(message);
   }
 
-  private async sendBatchAlert(opportunities: AlertOpportunity[]): Promise<void> {
-    const lines = opportunities.slice(0, 5).map(
-      (o, i) => `${i + 1}. ${o.title} (Score: ${o.score}, ${o.priority})`,
-    );
-
-    const message = [
-      `🚨 ALERTA: VÍAS PROMETEDORAS 🚨`,
-      ``,
-      `Se encontraron ${opportunities.length} oportunidades viables:`,
-      ``,
-      ...lines,
-      ``,
-      `Revisa el dashboard: http://localhost:3002/opportunities`,
-    ].join('\n');
-
-    await this.sendTelegram(message);
+  public async sendScannerFailureAlert(scannerName: string, failures: number): Promise<void> {
+    const text = `⚠️ *ALERTA DE SCANNER*: El scanner \`${scannerName}\` ha fallado ${failures} ciclos consecutivos.`;
+    await this.sendTelegram(text);
   }
 
   private async sendTelegram(text: string): Promise<void> {
     if (this.isMock) {
-      console.log(`[AlertSystem] MOCK alert:\n${text.slice(0, 200)}`);
+      console.log(`[AlertSystem] MOCK Telegram Audit Notification:\n${text}`);
       return;
     }
 
@@ -95,27 +79,12 @@ export class AlertSystem {
       await axios.post(url, {
         chat_id: this.chatId,
         text,
+        parse_mode: 'Markdown',
         disable_web_page_preview: true,
       }, { timeout: 15_000 });
+      console.log('[AlertSystem] ✅ Dossier auditado enviado exitosamente a Telegram.');
     } catch (err) {
-      console.warn('[AlertSystem] Failed to send alert:', (err as Error).message);
+      console.error('[AlertSystem] ❌ Fallo al enviar mensaje a Telegram:', (err as Error).message);
     }
-  }
-
-  /**
-   * FIX 2: Alert when a scanner has failed multiple consecutive cycles.
-   */
-  async sendScannerFailureAlert(scannerName: string, consecutiveFailures: number): Promise<void> {
-    const message = [
-      `⚠️ SCANNER OFFLINE ⚠️`,
-      ``,
-      `El scanner "${scannerName}" ha fallado ${consecutiveFailures} ciclos consecutivos.`,
-      `Esto significa que NO se están descubriendo oportunidades de esta fuente.`,
-      ``,
-      `Revisa los logs: docker logs ain-research --tail 50`,
-      `Dashboard: http://localhost:3002/scanner-health`,
-    ].join('\n');
-
-    await this.sendTelegram(message);
   }
 }
