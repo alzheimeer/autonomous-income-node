@@ -131,6 +131,18 @@ export class DeepAuditorEngine {
       });
     }
 
+    // Reconocimiento de arquitecturas de alto rendimiento (WebSockets, Redis, Surebets, Poker GTO)
+    const lowerText = `${opp.title} ${opp.description}`.toLowerCase();
+    const hasHighPerformanceTech = ['websocket', 'redis', 'postgres', 'surebet', 'gto', 'poker', 'arbitrage'].some(k => lowerText.includes(k));
+    if (hasHighPerformanceTech) {
+      evidence.push({
+        sourceType: 'economic_model',
+        description: 'Implementación cuantitativa o arquitectura de baja latencia con ventaja matemática o de velocidad comprobada.',
+        sentiment: 'positive',
+      });
+      score += 15;
+    }
+
     // Viabilidad económica y veredicto
     const isHighConviction = score >= 85;
     const verdict = isHighConviction ? 'VERIFIED_LEGIT' : 'INCONCLUSIVE';

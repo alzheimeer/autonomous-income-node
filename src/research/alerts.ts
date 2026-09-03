@@ -74,8 +74,8 @@ export class AlertSystem {
       return;
     }
 
+    const url = `https://api.telegram.org/bot${this.botToken}/sendMessage`;
     try {
-      const url = `https://api.telegram.org/bot${this.botToken}/sendMessage`;
       await axios.post(url, {
         chat_id: this.chatId,
         text,
@@ -83,8 +83,18 @@ export class AlertSystem {
         disable_web_page_preview: true,
       }, { timeout: 15_000 });
       console.log('[AlertSystem] ✅ Dossier auditado enviado exitosamente a Telegram.');
-    } catch (err) {
-      console.error('[AlertSystem] ❌ Fallo al enviar mensaje a Telegram:', (err as Error).message);
+    } catch {
+      // Fallback sin Markdown si hay caracteres no escapados como guiones bajos en URLs de GitHub
+      try {
+        await axios.post(url, {
+          chat_id: this.chatId,
+          text: text.replace(/[*_`]/g, ''),
+          disable_web_page_preview: true,
+        }, { timeout: 15_000 });
+        console.log('[AlertSystem] ✅ Dossier auditado enviado a Telegram (modo fallback texto plano).');
+      } catch (err2) {
+        console.error('[AlertSystem] ❌ Fallo al enviar mensaje a Telegram:', (err2 as Error).message);
+      }
     }
   }
 }

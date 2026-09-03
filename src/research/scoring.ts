@@ -63,14 +63,33 @@ interface AnthropicResponse {
 // ── ScoringEngine ──────────────────────────────────────────────────────────
 
 export class ScoringEngine {
+  private readonly provider: 'deepseek' | 'anthropic' | 'none';
   private readonly apiKey: string;
-  private readonly apiVersion = '2023-06-01';
-  private readonly model = 'claude-3-haiku-20240307'; // Fast, cost-effective
-  private readonly baseURL = 'https://api.anthropic.com/v1/messages';
-  private readonly timeout = 30_000; // 30 seconds max as per requirement
+  private readonly baseURL: string;
+  private readonly model: string;
+  private readonly timeout = 30_000;
 
   constructor() {
-    this.apiKey = process.env['ANTHROPIC_API_KEY'] ?? '';
+    const deepseekKey = process.env['OPENAI_API_KEY'];
+    const deepseekBase = process.env['OPENAI_BASE_URL'] ?? 'https://api.deepseek.com';
+    const anthropicKey = process.env['ANTHROPIC_API_KEY'];
+
+    if (deepseekKey) {
+      this.provider = 'deepseek';
+      this.apiKey = deepseekKey;
+      this.baseURL = `${deepseekBase.replace(/\/+$/, '')}/chat/completions`;
+      this.model = process.env['TRIAGE_MODEL'] || 'deepseek-chat';
+    } else if (anthropicKey) {
+      this.provider = 'anthropic';
+      this.apiKey = anthropicKey;
+      this.baseURL = 'https://api.anthropic.com/v1/messages';
+      this.model = 'claude-3-haiku-20240307';
+    } else {
+      this.provider = 'none';
+      this.apiKey = '';
+      this.baseURL = '';
+      this.model = '';
+    }
   }
 
   /**
@@ -79,14 +98,14 @@ export class ScoringEngine {
    * Falls back to default score of 50 if API fails.
    */
   async score(opportunity: RawOpportunity): Promise<ScoringResult> {
-    if (!this.apiKey) {
-      console.warn('[ScoringEngine] No ANTHROPIC_API_KEY — using fallback score.');
+    if (this.provider === 'none') {
+      console.warn('[ScoringEngine] No LLM API key configured — using fallback score.');
       return this.fallbackScore('API key not configured');
     }
 
     try {
       const prompt = this.buildPrompt(opportunity);
-      const response = await this.callAnthropicAPI(prompt);
+      const response = await this.callLLM(prompt);
       return this.parseResponse(response, opportunity);
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : String(err);
@@ -98,14 +117,13 @@ export class ScoringEngine {
   /**
    * Deep-dive analysis of a promising opportunity.
    * Called only for opportunities with score >= 70.
-   * Asks Claude to analyze in detail: implementation steps, risks, timeline, expected ROI.
    */
   async deepDive(
     opportunity: RawOpportunity,
     initialScore: ScoringResult,
   ): Promise<{ analysis: string; conclusion: string; stillViable: boolean } | null> {
-    if (!this.apiKey) {
-      console.warn('[ScoringEngine] No ANTHROPIC_API_KEY — skipping deep dive.');
+    if (this.provider === 'none') {
+      console.warn('[ScoringEngine] No LLM configured — skipping deep dive.');
       return null;
     }
 
@@ -141,60 +159,34 @@ Respond ONLY with valid JSON (no markdown):
 }`;
 
     try {
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 45_000);
+      const content = await this.callLLM(prompt, 1500);
 
-      try {
-        const response = await fetch(this.baseURL, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'x-api-key': this.apiKey,
-            'anthropic-version': this.apiVersion,
-          },
-          body: JSON.stringify({
-            model: this.model,
-            max_tokens: 1500,
-            messages: [{ role: 'user', content: prompt }],
-          }),
-          signal: controller.signal,
-        });
-
-        if (!response.ok) {
-          const errorText = await response.text();
-          throw new Error(`Anthropic API error ${response.status}: ${errorText}`);
+      // Parse JSON from response
+      let jsonStr = content.trim();
+      const objectMatch = jsonStr.match(/\{[\s\S]*/);
+      if (objectMatch) {
+        jsonStr = objectMatch[0];
+        if (!jsonStr.endsWith('}')) {
+          if ((jsonStr.match(/"/g) || []).length % 2 !== 0) {
+            jsonStr += '"';
+          }
+          if (!jsonStr.endsWith('}')) {
+            jsonStr += '}';
+          }
         }
-
-        const data = (await response.json()) as AnthropicResponse;
-        const textContent = data.content.find((c) => c.type === 'text');
-
-        if (!textContent?.text) {
-          throw new Error('No text content in Anthropic response');
-        }
-
-        const content = textContent.text;
-
-        // Parse JSON from response
-        let jsonStr = content.trim();
-        const jsonMatch = jsonStr.match(/\{[\s\S]*\}/);
-        if (jsonMatch) {
-          jsonStr = jsonMatch[0];
-        }
-
-        const parsed = JSON.parse(jsonStr) as {
-          analysis?: string;
-          conclusion?: string;
-          stillViable?: boolean;
-        };
-
-        return {
-          analysis: parsed.analysis ?? 'No analysis provided',
-          conclusion: parsed.conclusion ?? 'Inconclusive',
-          stillViable: parsed.stillViable ?? true,
-        };
-      } finally {
-        clearTimeout(timeoutId);
       }
+
+      const parsed = JSON.parse(jsonStr) as {
+        analysis?: string;
+        conclusion?: string;
+        stillViable?: boolean;
+      };
+
+      return {
+        analysis: parsed.analysis ?? 'No analysis provided',
+        conclusion: parsed.conclusion ?? 'Inconclusive',
+        stillViable: parsed.stillViable ?? true,
+      };
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : String(err);
       console.warn('[ScoringEngine] Deep-dive failed:', errorMessage);
@@ -210,10 +202,13 @@ Respond ONLY with valid JSON (no markdown):
     return `You are evaluating a monetization opportunity for an autonomous AI agent.
 
 AGENT CONTEXT:
-- The agent has ~$99 USDC on Base blockchain
-- It can run TypeScript/Node.js code 24/7 autonomously
-- Stack includes: ethers v6, Fastify, SQLite, Anthropic API access
-- Goal: Generate passive income through automated strategies
+- The agent has capital to allocate ($50 - $200+) for high-yield, high-probability automation
+- It runs Node.js / TypeScript 24/7 autonomously, with capabilities for:
+  * High-speed WebSockets, Redis Streams, and PostgreSQL data pipelines
+  * Headless browser automation (Playwright/Puppeteer) and distributed scraping
+  * Mathematical & quantitative modeling: Poker Texas Hold'em (GTO analysis, rakeback), virtual betting/surebets arbitrage, and provably fair casino systems
+  * Crypto/EVM integrations and agent marketplaces
+- Goal: Prioritize high probability of achieving >= 10% monthly yield through verified automated systems and edge-based monetization
 
 OPPORTUNITY TO EVALUATE:
 - Title: ${opp.title}
@@ -255,30 +250,64 @@ Respond ONLY with valid JSON in this exact format (no markdown, no explanation o
   }
 
   /**
-   * Call Anthropic Claude API with the scoring prompt.
-   * Uses fetch with timeout for reliability.
+   * Call LLM (DeepSeek or Anthropic) with the scoring prompt.
    */
-  private async callAnthropicAPI(prompt: string): Promise<string> {
+  private async callLLM(prompt: string, maxTokens = 1024): Promise<string> {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), this.timeout);
 
     try {
+      if (this.provider === 'deepseek') {
+        const response = await fetch(this.baseURL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${this.apiKey}`,
+          },
+          body: JSON.stringify({
+            model: this.model,
+            max_tokens: maxTokens,
+            response_format: { type: 'json_object' },
+            messages: [
+              {
+                role: 'system',
+                content: 'You are a financial and technical monetization evaluation AI. You must always reply with a valid JSON object matching the requested schema exactly.',
+              },
+              { role: 'user', content: prompt }
+            ],
+          }),
+          signal: controller.signal,
+        });
+
+        if (!response.ok) {
+          const errorText = await response.text();
+          throw new Error(`DeepSeek API error ${response.status}: ${errorText}`);
+        }
+
+        const data = (await response.json()) as {
+          choices?: Array<{ message?: { content?: string } }>;
+        };
+
+        const content = data.choices?.[0]?.message?.content;
+        if (!content) {
+          throw new Error('No text content in DeepSeek response');
+        }
+
+        return content;
+      }
+
+      // Anthropic provider fallback
       const response = await fetch(this.baseURL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'x-api-key': this.apiKey,
-          'anthropic-version': this.apiVersion,
+          'anthropic-version': '2023-06-01',
         },
         body: JSON.stringify({
           model: this.model,
-          max_tokens: 512,
-          messages: [
-            {
-              role: 'user',
-              content: prompt,
-            },
-          ],
+          max_tokens: maxTokens,
+          messages: [{ role: 'user', content: prompt }],
         }),
         signal: controller.signal,
       });
@@ -317,9 +346,18 @@ Respond ONLY with valid JSON in this exact format (no markdown, no explanation o
       }
 
       // Try to find JSON object in the text
-      const objectMatch = jsonStr.match(/\{[\s\S]*\}/);
+      const objectMatch = jsonStr.match(/\{[\s\S]*/);
       if (objectMatch) {
         jsonStr = objectMatch[0];
+        if (!jsonStr.endsWith('}')) {
+          // If reasoning string was truncated, auto-close quote and object
+          if ((jsonStr.match(/"/g) || []).length % 2 !== 0) {
+            jsonStr += '"';
+          }
+          if (!jsonStr.endsWith('}')) {
+            jsonStr += '}';
+          }
+        }
       }
 
       const parsed = JSON.parse(jsonStr) as {

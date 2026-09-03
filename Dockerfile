@@ -60,12 +60,10 @@ RUN groupadd -g 1001 ain && \
 COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/package.json ./
 COPY --from=builder /app/pnpm-workspace.yaml ./
-COPY --from=builder /app/packages/cli/package.json ./packages/cli/
 COPY --from=builder /app/constitution.md ./
 
 # Copiar node_modules del builder (incluye módulos nativos compilados como better-sqlite3)
 COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/packages/cli/node_modules ./packages/cli/node_modules
 
 # Crear directorios necesarios con ownership correcto
 RUN mkdir -p data keys investigacion && chown -R ain:ain data keys investigacion
@@ -73,13 +71,13 @@ RUN mkdir -p data keys investigacion && chown -R ain:ain data keys investigacion
 # Cambiar a usuario no-root
 USER ain
 
-# Exponer puertos: 3000 (API HTTP), 9090 (métricas)
-EXPOSE 3000 9090
+# Exponer puerto: 3002 (Research Dashboard y Health API)
+EXPOSE 3002
 
 # Health check — esperar 30s al arranque
 HEALTHCHECK --interval=30s --timeout=5s --start-period=30s --retries=3 \
-  CMD curl -f http://localhost:3000/health || exit 1
+  CMD curl -f http://localhost:3002/health || exit 1
 
 # Usar tini como proceso init (manejo correcto de señales)
 ENTRYPOINT ["/usr/bin/tini", "--"]
-CMD ["node", "dist/agent/bootstrap.js"]
+CMD ["node", "dist/research/index.js"]

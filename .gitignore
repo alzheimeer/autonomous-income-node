@@ -20,6 +20,13 @@ data/*.db-wal
 data/backups/
 !data/.gitkeep
 
+# Legacy and generated research
+legacy-backup/
+investigacion/*.json
+investigacion/archive_proposals/
+!investigacion/master_log.md
+!investigacion/.gitkeep
+
 # Reference repos
 references/
 !references/.gitkeep

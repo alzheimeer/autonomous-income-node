@@ -27,8 +27,8 @@ import type { ResearchDatabase } from './state/database.js';
 // ── Priority keywords for rule-based assignment ────────────────────────────
 
 const PRIORITY_KEYWORDS: Record<Priority, string[]> = {
-  P1: ['agent', 'a2a', 'marketplace', 'service', 'swarms', 'horizen', 'near ai', 'okx ai'],
-  P2: ['browser', 'automation', 'rpa', 'bot', 'puppeteer', 'playwright', 'selenium', 'scraper'],
+  P1: ['agent', 'a2a', 'marketplace', 'service', 'swarms', 'horizen', 'near ai', 'okx ai', 'arbitrage', 'surebet', 'websocket', 'redis streams', 'postgres'],
+  P2: ['browser', 'automation', 'rpa', 'bot', 'puppeteer', 'playwright', 'selenium', 'scraper', 'poker', 'texas holdem', 'casino', 'betting', 'odds'],
   P3: ['youtube', 'tiktok', 'content', 'video', 'faceless', 'shorts', 'reels', 'creator'],
   P4: ['trading', 'yield', 'arb', 'defi', 'perps', 'perpetual', 'dex', 'amm', 'lending', 'aave', 'uniswap'],
 };

@@ -16,6 +16,8 @@
  */
 
 import { randomUUID } from 'node:crypto';
+import { existsSync, readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import type { ResearchDatabase } from './state/database.js';
 import type { IResearchScanner, RawOpportunity } from './scanners/types.js';
 import { ScoringEngine } from './scoring.js';
@@ -33,6 +35,7 @@ import { RPAScanner } from './scanners/rpa-scanner.js';
 // import { ContentScanner } from './scanners/content-scanner.js';
 import { TradingScanner } from './scanners/trading-scanner.js';
 import { GeneralScanner } from './scanners/general-scanner.js';
+import { HighSpeedArbitrageScanner } from './scanners/high-speed-arbitrage-scanner.js';
 
 export interface ResearchEngineConfig {
   intervalMinMs: number;
@@ -94,6 +97,7 @@ export class ResearchEngine {
     this.scanners = [
       new MarketplaceScanner(),
       new RPAScanner(),
+      new HighSpeedArbitrageScanner(),
       // new ContentScanner(),
       new TradingScanner(),
       new GeneralScanner(),
@@ -489,8 +493,6 @@ export class ResearchEngine {
     // Load dynamic blacklist from consolidator (failed/discarded proposals)
     const blacklistedTitles = new Set<string>();
     try {
-      const { existsSync, readFileSync } = require('node:fs');
-      const { resolve } = require('node:path');
       const blacklistPath = resolve(process.cwd(), 'data/research-blacklist.json');
       
       if (existsSync(blacklistPath)) {
