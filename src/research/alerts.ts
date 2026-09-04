@@ -29,8 +29,8 @@ export class AlertSystem {
    * Notifica a Telegram ÚNICAMENTE un dossier de oportunidad completamente auditada y legítima
    */
   public async sendAuditedDossier(opp: AuditInput, audit: AuditResult): Promise<void> {
-    if (audit.verdict !== 'VERIFIED_LEGIT' || audit.trustScore < 85) {
-      console.log(`[AlertSystem] 🔕 Oportunidad "${opp.title}" descartada para Telegram (Veredicto: ${audit.verdict}, Score: ${audit.trustScore})`);
+    if (audit.verdict !== 'VERIFIED_LEGIT' || audit.trustScore < 85 || audit.riskPercent >= 50) {
+      console.log(`[AlertSystem] 🔕 Oportunidad "${opp.title}" descartada para Telegram (Veredicto: ${audit.verdict}, Score: ${audit.trustScore}, Riesgo: ${audit.riskPercent}%)`);
       return;
     }
 
@@ -43,12 +43,14 @@ export class AlertSystem {
       `🎯 *Oportunidad:* ${opp.title}`,
       `📂 *Categoría:* ${opp.category}`,
       `⭐ *Puntaje de Confianza:* ${audit.trustScore}/100`,
+      `🛡️ *Riesgo Estimado:* ${audit.riskPercent}% *(Aprobado: < 50%)*`,
       `🔍 *Factibilidad Técnica:* ${audit.technicalFeasibility}`,
       `💰 *Demanda Económica:* ${audit.economicModelViability}`,
       ``,
       `📋 *Conclusión de la Auditoría:*`,
       `${audit.summaryConclusion}`,
       ``,
+      audit.deepseekAnalysis ? `🧠 *Evaluación DeepSeek:*\n${audit.deepseekAnalysis}\n` : '',
       `📊 *Evidencia & Verificación:*`,
       evidenceList,
       ``,
@@ -57,7 +59,7 @@ export class AlertSystem {
       ``,
       opp.sourceUrl ? `🔗 *Fuente Verificada:* ${opp.sourceUrl}` : '',
       `━━━━━━━━━━━━━━━━━━━━━━━━━━`,
-      `_Filtro Anti-Estafas y Memoria Histórica Aprobados_`
+      `_Filtro Anti-Estafas, Memoria Histórica y Riesgo Cuantitativo (<50%) Aprobados_`
     ].filter(Boolean).join('\n');
 
     await this.sendTelegram(message);

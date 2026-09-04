@@ -43,6 +43,37 @@ describe('DeepAuditorEngine & Alert Pipeline', () => {
 
     expect(result.verdict).toBe('VERIFIED_LEGIT');
     expect(result.trustScore).toBeGreaterThanOrEqual(85);
+    expect(result.riskPercent).toBeLessThan(50);
     expect(result.evidenceCollected.length).toBeGreaterThan(0);
+  });
+
+  it('rejects opportunities with risk percentage >= 50% (scoreRisk <= 50)', async () => {
+    const result = await auditor.auditOpportunity({
+      id: 'test-risk-1',
+      title: 'High leverage futures grid bot',
+      description: 'Automated 20x leverage futures grid bot operating on volatile pairs',
+      category: 'trading',
+      rawScore: 88,
+      scoreRisk: 30, // 30/100 score means 70% risk of capital loss
+    });
+
+    expect(result.verdict).toBe('REJECTED_RISK');
+    expect(result.riskPercent).toBeGreaterThanOrEqual(50);
+    expect(result.trustScore).toBeLessThan(50);
+  });
+
+  it('rejects duplicate initiatives that only change the cryptocurrency', async () => {
+    // Simular que DeepSeek o el auditor detecta la variante de moneda
+    const result = await auditor.auditOpportunity({
+      id: 'test-dup-1',
+      title: 'Binance SOLUSDT funding arbitrage strategy',
+      description: 'Delta-neutral funding rate harvest on SOLUSDT repeating identical BTCUSDT playbook',
+      category: 'trading',
+      rawScore: 86,
+      scoreRisk: 40, // scoreRisk <= 50 -> preliminarmente rechazado por riesgo >= 50%
+    });
+
+    expect(['REJECTED_RISK', 'REJECTED_DUPLICATE']).toContain(result.verdict);
+    expect(result.riskPercent).toBeGreaterThanOrEqual(50);
   });
 });

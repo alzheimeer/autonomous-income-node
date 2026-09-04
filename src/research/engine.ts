@@ -313,8 +313,9 @@ export class ResearchEngine {
       this.state = 'communicating';
       this.alertSystem.resetCycle();
 
-      const actionable = this.db.all<{ id: string; title: string; score: number; priority: string; description: string; category: string; source_url: string | null }>(
-        "SELECT id, title, score, priority, description, category, source_url FROM opportunities WHERE discovered_at >= ? AND score >= ?",
+      // FILTRO ESTRICTO: Solo iniciativas con score_risk > 50 (es decir riesgo < 50%) y score >= minScoreForAction
+      const actionable = this.db.all<{ id: string; title: string; score: number; score_risk: number; priority: string; description: string; category: string; source_url: string | null }>(
+        "SELECT id, title, score, score_risk, priority, description, category, source_url FROM opportunities WHERE discovered_at >= ? AND score >= ? AND score_risk > 50",
         startedAt,
         this.config.minScoreForAction,
       );
@@ -327,22 +328,29 @@ export class ResearchEngine {
           category: opp.category,
           sourceUrl: opp.source_url ?? undefined,
           rawScore: opp.score,
+          scoreRisk: opp.score_risk,
         });
 
         // Actualizar oportunidad con resultado de auditoría
-        if (audit.verdict === 'REJECTED_HISTORICAL' || audit.verdict === 'REJECTED_SCAM') {
+        if (
+          audit.verdict === 'REJECTED_HISTORICAL' || 
+          audit.verdict === 'REJECTED_SCAM' || 
+          audit.verdict === 'REJECTED_RISK' || 
+          audit.verdict === 'REJECTED_DUPLICATE' ||
+          audit.riskPercent >= 50
+        ) {
           this.db.run(
             'UPDATE opportunities SET status = ?, reasoning = ? WHERE id = ?',
             'descartada',
-            `[AUDIT RECHAZADO: ${audit.verdict}] ${audit.summaryConclusion}`,
+            `[AUDIT RECHAZADO: ${audit.verdict}] (Riesgo: ${audit.riskPercent}%) ${audit.summaryConclusion}`,
             opp.id
           );
-        } else if (audit.verdict === 'VERIFIED_LEGIT') {
+        } else if (audit.verdict === 'VERIFIED_LEGIT' && audit.riskPercent < 50) {
           this.db.run(
             'UPDATE opportunities SET status = ?, score = ?, reasoning = ? WHERE id = ?',
             'verificada_legitima',
             audit.trustScore,
-            `[AUDIT VERIFICADO] ${audit.summaryConclusion}`,
+            `[AUDIT VERIFICADO: Riesgo ${audit.riskPercent}%] ${audit.summaryConclusion}`,
             opp.id
           );
 
@@ -354,6 +362,7 @@ export class ResearchEngine {
             category: opp.category,
             sourceUrl: opp.source_url ?? undefined,
             rawScore: opp.score,
+            scoreRisk: opp.score_risk,
           }, audit);
         }
       }
@@ -419,14 +428,41 @@ export class ResearchEngine {
    * Uses first 50 chars of normalized title + source_url to catch
    * near-duplicates (e.g. same Medium article across scan cycles).
    */
+  /**
+   * Compute a normalized dedup key from title + URL.
+   * Neutralizes specific cryptocurrency tokens/pairs (e.g. BTC, ETH, SOL, BTCUSDT, ETH-USDT)
+   * so identical strategies (e.g. "Binance BTCUSDT funding" vs "Binance ETHUSDT funding")
+   * share the same dedupe key and are not repeated across different currencies.
+   */
   private computeDedupeKey(title: string, sourceUrl?: string): string {
-    const normalizedTitle = title
+    let normalized = title
       .toLowerCase()
-      .replace(/\s+/g, ' ')  // collapse whitespace
-      .replace(/[^a-z0-9 ]/g, '')  // remove special chars
+      // Eliminar identificadores específicos de pares o contratos
+      .replace(/\b(?:btc|eth|sol|bnb|xrp|ada|doge|dot|matic|avax|link|arb|op|sui|apt|near|ton|shib|pepe|wif|floki|usdt|usdc|busd|dai|fdusd|tusd|weth|cbeth|wsteth|weeth)\b/gi, '<token>')
+      // Eliminar pares continuos comunes (ej: btcusdt, ethusdt, solusdc)
+      .replace(/[a-z0-9]{2,10}(?:usdt|usdc|busd|dai|btc|eth)/gi, '<pair>')
+      // Eliminar direcciones hexadecimales (ej: 0x123...abc)
+      .replace(/0x[a-f0-9]{4,40}/gi, '<address>')
+      // Eliminar porcentajes y números específicos que varían entre monedas (ej: 12.5% vs 15.2%)
+      .replace(/\b\d+(\.\d+)?%\b/g, '<percent>')
+      .replace(/\b\d+(\.\d+)?\b/g, '<num>')
+      .replace(/\s+/g, ' ')
+      .replace(/[^a-z0-9 <>]/g, '')
       .trim()
-      .slice(0, 50);
-    return sourceUrl ? `${sourceUrl}::${normalizedTitle}` : normalizedTitle;
+      .slice(0, 60);
+
+    // Normalizar URL eliminando rutas específicas de pares o tokens
+    let normalizedUrl = '';
+    if (sourceUrl) {
+      try {
+        const u = new URL(sourceUrl);
+        normalizedUrl = `${u.hostname}${u.pathname.replace(/\/(0x[a-f0-9]+|[a-z0-9_-]+(usdt|usdc|swap|perp|pool))/i, '/<pool>')}`;
+      } catch {
+        normalizedUrl = sourceUrl.split('?')[0]?.slice(0, 40) ?? '';
+      }
+    }
+
+    return normalizedUrl ? `${normalizedUrl}::${normalized}` : normalized;
   }
 
   private deduplicate(raw: RawOpportunity[]): RawOpportunity[] {

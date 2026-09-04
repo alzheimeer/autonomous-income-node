@@ -1,30 +1,46 @@
 # 📊 Research Master Log
 
-*Última actualización: 2026-09-03T18:21:53.055Z*
+*Última actualización: 2026-09-04T03:31:04.746Z*
 
 ## 📈 Resumen
 
 | Métrica | Valor |
 |---------|-------|
-| Total oportunidades | 5770 |
-| Activas/En progreso | 50 |
+| Total oportunidades | 5831 |
+| Activas/En progreso | 66 |
 | Implementadas | 0 |
-| Descartadas | 3988 |
+| Descartadas | 3991 |
 
-## ⏳ Pendientes de Aprobación (15)
+## ⏳ Pendientes de Aprobación (31)
 
 | ID | Título | Fuente | Prioridad | Score | Descubierto | Actualizado | Razón |
 |----|--------|--------|-----------|-------|-------------|-------------|-------|
+| 0268aa7d | uniswap-v4: ETH-CMETH (4535.2% APY) | defillama-yields | P4 | 77 | 2026-09-03 | 2026-09-03 | - |
+| 8cd7893b | aerodrome-slipstream: FLOCK-USDC (177... | defillama-yields | P4 | 77 | 2026-09-03 | 2026-09-03 | - |
 | 50d699c6 | aerodrome-slipstream: SOL-USDC (4026.... | defillama-yields | P4 | 76 | 2026-09-03 | 2026-09-03 | - |
+| e67982c2 | aerodrome-slipstream: WETH-CBBTC (254... | defillama-yields | P4 | 75 | 2026-09-04 | 2026-09-04 | - |
+| 13ffe751 | HYPE volatility: 8.4% daily | coingecko-volatility | P4 | 75 | 2026-09-04 | 2026-09-04 | - |
+| 390e6155 | aerodrome-slipstream: WETH-CBBTC (218... | defillama-yields | P4 | 74 | 2026-09-04 | 2026-09-04 | - |
+| f2428ef2 | uniswap-v4: USDC-BLUECHIP (1955.2% APY) | defillama-yields | P4 | 74 | 2026-09-03 | 2026-09-03 | - |
 | bfe8076f | DeFi yield: aerodrome-slipstream USDC... | defillama-yields | P4 | 74 | 2026-08-14 | 2026-08-14 | - |
+| 01dddc5a | uniswap-v4: USDC-BLUECHIP (2309.8% APY) | defillama-yields | P4 | 73 | 2026-09-03 | 2026-09-03 | - |
 | 16d05fad | DeFi yield: aerodrome-slipstream WETH... | defillama-yields | P4 | 73 | 2026-08-22 | 2026-08-22 | - |
 | 3e8b4048 | DeFi yield: aerodrome-slipstream USDC... | defillama-yields | P4 | 73 | 2026-08-18 | 2026-08-18 | - |
 | 091ea567 | DeFi yield: aerodrome-slipstream USDC... | defillama-yields | P4 | 73 | 2026-08-13 | 2026-08-13 | - |
+| 85482d97 | aerodrome-slipstream: USDC-NVDAC (155... | defillama-yields | P4 | 72 | 2026-09-04 | 2026-09-04 | - |
+| 41984e56 | uniswap-v4: ETH-CMETH (4555.5% APY) | defillama-yields | P4 | 72 | 2026-09-04 | 2026-09-04 | - |
+| 07089efc | uniswap-v4: USDC-BLUECHIP (2227.6% APY) | defillama-yields | P4 | 72 | 2026-09-03 | 2026-09-03 | - |
 | b6091008 | uniswap-v3: WETH-BASECAT (4787.6% APY) | defillama-yields | P4 | 72 | 2026-09-03 | 2026-09-03 | - |
 | 1d8c69bf | aerodrome-slipstream: USDC-AAPLC (287... | defillama-yields | P4 | 72 | 2026-09-03 | 2026-09-03 | - |
 | fe554404 | aerodrome-slipstream: ALIGN-USDC (253... | defillama-yields | P4 | 72 | 2026-09-03 | 2026-09-03 | - |
 | 9a7aafaa | DeFi yield: aerodrome-slipstream FUN-... | defillama-yields | P4 | 72 | 2026-08-16 | 2026-08-16 | - |
+| 5ac6785c | uniswap-v4: USDC-BLUECHIP (2305.3% APY) | defillama-yields | P4 | 71 | 2026-09-04 | 2026-09-04 | - |
+| 861c5fd3 | aerodrome-slipstream: SOL-USDC (1730.... | defillama-yields | P4 | 71 | 2026-09-04 | 2026-09-04 | - |
+| 278fe539 | DOGE volatility: 10.7% daily | coingecko-volatility | P4 | 71 | 2026-09-03 | 2026-09-03 | - |
+| 1e5e00c4 | uniswap-v4: ETH-CMETH (4537.3% APY) | defillama-yields | P4 | 71 | 2026-09-03 | 2026-09-03 | - |
 | ee27e7e0 | ZEC volatility: 18.7% daily | coingecko-volatility | P4 | 71 | 2026-09-03 | 2026-09-03 | - |
+| a8f987e8 | aerodrome-slipstream: SOL-USDC (1572.... | defillama-yields | P4 | 70 | 2026-09-04 | 2026-09-04 | - |
+| 49028694 | uniswap-v4: USDC-BLUECHIP (2072.1% APY) | defillama-yields | P4 | 70 | 2026-09-04 | 2026-09-04 | - |
 | 7552a705 | aerodrome-slipstream: SOL-CBBTC (2890... | defillama-yields | P4 | 70 | 2026-09-03 | 2026-09-03 | - |
 | 56a4e6b6 | uniswap-v3: WETH-BASECAT (4668.8% APY) | defillama-yields | P4 | 70 | 2026-09-03 | 2026-09-03 | - |
 | 6fa1aa5c | aerodrome-slipstream: FLOCK-USDC (263... | defillama-yields | P4 | 70 | 2026-09-03 | 2026-09-03 | - |
@@ -71,21 +87,63 @@
 | 735341ad | AI content niche: Self-Auditing Learn... | content-platform | P3 | 70 | 2026-08-21 | 2026-08-21 | - |
 | 9af7ecfc | AI content niche: The Model That Fail... | content-platform | P3 | 70 | 2026-08-20 | 2026-08-20 | - |
 
-## 🔬 En Profundización (81)
+## 🔬 En Profundización (123)
 
 | ID | Título | Fuente | Prioridad | Score | Descubierto | Actualizado | Razón |
 |----|--------|--------|-----------|-------|-------------|-------------|-------|
+| 4727c097 | aerodrome-slipstream: WETH-CBBTC (280... | defillama-yields | P4 | 69 | 2026-09-04 | 2026-09-04 | - |
+| d1fc6770 | GitHub Repo: llSourcell/ChatGPT_Sport... | github-arbitrage-search | P2 | 69 | 2026-09-04 | 2026-09-04 | - |
+| edb7d215 | uniswap-v4: ETH-CMETH (4557.9% APY) | defillama-yields | P4 | 69 | 2026-09-04 | 2026-09-04 | - |
+| 154d11a5 | ADA volatility: 10.4% daily | coingecko-volatility | P4 | 69 | 2026-09-04 | 2026-09-04 | - |
+| 6498e852 | aerodrome-slipstream: USDC-CBBTC (396... | defillama-yields | P4 | 69 | 2026-09-03 | 2026-09-03 | - |
+| 96cedaf7 | aerodrome-slipstream: SOL-USDC (4144.... | defillama-yields | P4 | 69 | 2026-09-03 | 2026-09-03 | - |
+| d8f28a4b | DOGE volatility: 9.5% daily | coingecko-volatility | P4 | 68 | 2026-09-04 | 2026-09-04 | - |
+| 5c310195 | uniswap-v4: USDC-BLUECHIP (2203.5% APY) | defillama-yields | P4 | 68 | 2026-09-04 | 2026-09-04 | - |
+| 1ac82145 | aerodrome-slipstream: USDC-CBBTC (246... | defillama-yields | P4 | 68 | 2026-09-03 | 2026-09-03 | - |
+| 5d911fb4 | ADA volatility: 12.7% daily | coingecko-volatility | P4 | 68 | 2026-09-03 | 2026-09-03 | - |
+| c7b23400 | NEAR volatility: 8.0% daily | coingecko-volatility | P4 | 67 | 2026-09-04 | 2026-09-04 | - |
+| fd2f425e | aerodrome-slipstream: AVNT-USDC (2543... | defillama-yields | P4 | 67 | 2026-09-04 | 2026-09-04 | - |
+| ea1404cb | aerodrome-slipstream: SOL-USDC (3819.... | defillama-yields | P4 | 67 | 2026-09-03 | 2026-09-03 | - |
+| a97cfd62 | aerodrome-slipstream: WETH-CBBTC (287... | defillama-yields | P4 | 67 | 2026-09-03 | 2026-09-03 | - |
 | 1eaa7be3 | SUI volatility: 10.0% daily | coingecko-volatility | P4 | 67 | 2026-09-03 | 2026-09-03 | - |
 | 27416a39 | aerodrome-slipstream: WETH-CBBTC (211... | defillama-yields | P4 | 66 | 2026-09-03 | 2026-09-03 | - |
 | d8f0ad05 | XRP volatility: 10.5% daily | coingecko-volatility | P4 | 66 | 2026-09-03 | 2026-09-03 | - |
 | 51f9b0e2 | HBAR volatility: 10.3% daily | coingecko-volatility | P4 | 65 | 2026-09-03 | 2026-09-03 | - |
+| bd8e80fc | ZEC volatility: 20.4% daily | coingecko-volatility | P4 | 64 | 2026-09-04 | 2026-09-04 | - |
+| dc48cec7 | HBAR volatility: 8.6% daily | coingecko-volatility | P4 | 64 | 2026-09-04 | 2026-09-04 | - |
+| 1a548605 | UNI volatility: 15.0% daily | coingecko-volatility | P4 | 64 | 2026-09-03 | 2026-09-03 | - |
+| 79f5ba76 | HBAR volatility: 8.9% daily | coingecko-volatility | P4 | 64 | 2026-09-03 | 2026-09-03 | - |
 | 077e27a5 | DOGE volatility: 11.1% daily | coingecko-volatility | P4 | 64 | 2026-09-03 | 2026-09-03 | - |
+| ada3bd18 | aerodrome-slipstream: USDC-CBBTC (238... | defillama-yields | P4 | 63 | 2026-09-04 | 2026-09-04 | - |
+| 66252238 | ZEC volatility: 21.5% daily | coingecko-volatility | P4 | 62 | 2026-09-03 | 2026-09-03 | - |
 | bddbcc53 | HBAR volatility: 9.7% daily | coingecko-volatility | P4 | 62 | 2026-09-03 | 2026-09-03 | - |
+| 313ba7f6 | NEAR volatility: 8.6% daily | coingecko-volatility | P4 | 61 | 2026-09-04 | 2026-09-04 | - |
 | db1f2b66 | SUI volatility: 9.6% daily | coingecko-volatility | P4 | 59 | 2026-09-03 | 2026-09-03 | - |
+| a66bb93c | XRP volatility: 9.6% daily | coingecko-volatility | P4 | 58 | 2026-09-04 | 2026-09-04 | - |
+| 40bf0424 | ADA volatility: 13.8% daily | coingecko-volatility | P4 | 58 | 2026-09-03 | 2026-09-03 | - |
+| a110f8c5 | XMR volatility: 9.5% daily | coingecko-volatility | P4 | 58 | 2026-09-03 | 2026-09-03 | - |
 | 02fded4d | HN: Porting my 1993 Amiga game to God... | hacker-news | P3 | 58 | 2026-09-03 | 2026-09-03 | - |
+| 478988d4 | ADA volatility: 10.9% daily | coingecko-volatility | P4 | 57 | 2026-09-04 | 2026-09-04 | - |
 | 27c3da45 | Texas Hold'em GTO Strategy Solver & A... | poker-analytics-repository | P4 | 57 | 2026-09-03 | 2026-09-03 | - |
 | 84239f2a | Cross-Platform Sports & Prediction Ma... | surebet-discovery-network | P1 | 57 | 2026-09-03 | 2026-09-03 | - |
+| d74ae4cf | LINK volatility: 8.5% daily | coingecko-volatility | P4 | 56 | 2026-09-04 | 2026-09-04 | - |
 | 04575bd7 | GitHub Repo: llSourcell/ChatGPT_Sport... | github-arbitrage-search | P2 | 56 | 2026-09-03 | 2026-09-03 | - |
+| 810ad71b | LINK volatility: 7.6% daily | coingecko-volatility | P4 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 04fccaf1 | LINK volatility: 7.9% daily | coingecko-volatility | P4 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 55ca1738 | aerodrome-slipstream: SOL-USDC (3605.... | defillama-yields | P4 | 50 | 2026-09-04 | 2026-09-04 | - |
+| c1538962 | uniswap-v4: USDC-BLUECHIP (1968.7% APY) | defillama-yields | P4 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 9967dc35 | HN (Show): Show HN: Devbar – Point at... | hacker-news | P1 | 50 | 2026-09-03 | 2026-09-03 | - |
+| 67fd674f | uniswap-v4: USDC-BLUECHIP (2389.2% APY) | defillama-yields | P4 | 50 | 2026-09-03 | 2026-09-03 | - |
+| 66d7b7d4 | UNI volatility: 12.9% daily | coingecko-volatility | P4 | 50 | 2026-09-03 | 2026-09-03 | - |
+| d4b5d358 | XRP volatility: 10.4% daily | coingecko-volatility | P4 | 50 | 2026-09-03 | 2026-09-03 | - |
+| 1ce8e62c | HN: OpenAI's GPT-6 Astra on ARC-AGI-3 | hacker-news | P3 | 50 | 2026-09-03 | 2026-09-03 | - |
+| c45e445d | HN: Xanadu was waiting for agents | hacker-news | P1 | 50 | 2026-09-03 | 2026-09-03 | - |
+| 94c161c9 | uniswap-v3: WETH-BASECAT (4703.0% APY) | defillama-yields | P4 | 50 | 2026-09-03 | 2026-09-03 | - |
+| 5a520720 | HBAR volatility: 9.5% daily | coingecko-volatility | P4 | 50 | 2026-09-03 | 2026-09-03 | - |
+| 7d5ccbda | NEAR volatility: 9.2% daily | coingecko-volatility | P4 | 50 | 2026-09-03 | 2026-09-03 | - |
+| ea4b779d | HN: Qwen 3.8 27B available on Cerebra... | hacker-news | P3 | 50 | 2026-09-03 | 2026-09-03 | - |
+| 2aaa7baa | HN (Ask): Ask HN: Why were OpenAI, Cl... | hacker-news | P3 | 50 | 2026-09-03 | 2026-09-03 | - |
+| 8a04684e | HN: The largest electric aircraft jus... | hacker-news | P3 | 50 | 2026-09-03 | 2026-09-03 | - |
 | 25f81bad | aerodrome-slipstream: USDC-NVDAC (262... | defillama-yields | P4 | 50 | 2026-09-03 | 2026-09-03 | - |
 | 70eb7c94 | aerodrome-slipstream: WETH-CBBTC (254... | defillama-yields | P4 | 50 | 2026-09-03 | 2026-09-03 | - |
 | 92c4461d | XRP volatility: 9.7% daily | coingecko-volatility | P4 | 50 | 2026-09-03 | 2026-09-03 | - |
@@ -410,7 +468,7 @@
 | 8b766aee | AI content niche: The MCP Playbook fo... | content-platform | P3 | 70 | 2026-08-10 | 2026-08-19 | - |
 | 5dbac35c | AI content niche: Titans: Learning to... | content-platform | P3 | 70 | 2026-08-10 | 2026-08-19 | - |
 
-## ❌ Descartadas (3988)
+## ❌ Descartadas (3991)
 
 | ID | Título | Fuente | Prioridad | Score | Descubierto | Actualizado | Razón |
 |----|--------|--------|-----------|-------|-------------|-------------|-------|
@@ -2976,6 +3034,7 @@
 | f37e3fef | DeFi yield: supernova-cl WETH-USDT (E... | defillama-yields | P4 | 45 | 2026-07-22 | 2026-07-22 | - |
 | e6df7101 | DeFi yield: uniswap-v4 USDC-CLAUDE (B... | defillama-yields | P4 | 45 | 2026-07-21 | 2026-07-21 | - |
 | 780a7c0b | HN: China’s open-weights AI strategy ... | hacker-news | P2 | 45 | 2026-07-20 | 2026-07-20 | - |
+| 78c68bb1 | aerodrome-slipstream: USDC-CBBTC (272... | defillama-yields | P4 | 44 | 2026-09-04 | 2026-09-04 | - |
 | c1c5e1d6 | AI content niche: How Competitors Are... | content-platform | P3 | 44 | 2026-08-22 | 2026-08-22 | - |
 | 4af9a5ae | AI content niche: Vectors Meet Dynamo... | content-platform | P3 | 44 | 2026-08-22 | 2026-08-22 | - |
 | df55f7e0 | New Base protocol: Syntetika (TVL $11... | defillama-new-protocols | P4 | 44 | 2026-08-22 | 2026-08-22 | - |
@@ -3937,6 +3996,7 @@
 | 9cad4e5a | HN: The startup's Postgres survival g... | hacker-news | P2 | 39 | 2026-07-22 | 2026-07-22 | - |
 | 55b5102c | HN: "Drawing" the Mona Lisa with GPT-... | hacker-news | P2 | 39 | 2026-07-21 | 2026-07-21 | - |
 | 2aff4019 | DeFi yield: supernova-cl WETH-USDT (E... | defillama-yields | P4 | 39 | 2026-07-21 | 2026-07-21 | - |
+| 8a77f703 | HN: Go grandmaster Shin defeats AI Ka... | hacker-news | P3 | 38 | 2026-09-04 | 2026-09-04 | - |
 | ced6f57c | HN: Aaron Swartz was prosecuted for s... | hacker-news | P1 | 38 | 2026-08-20 | 2026-08-20 | - |
 | d54ba80c | DeFi yield: supernova-cl WETH-USDT (E... | defillama-yields | P4 | 38 | 2026-08-17 | 2026-08-17 | - |
 | 4be3e534 | DeFi yield: supernova-cl WETH-USDT (E... | defillama-yields | P4 | 38 | 2026-08-16 | 2026-08-16 | - |
@@ -4398,6 +4458,7 @@
 | 1e1c178b | Reddit r/passive_income: Virtual Assi... | reddit-passive_income | P2 | 25 | 2026-07-23 | 2026-07-23 | - |
 | 82041b46 | Reddit r/passive_income: 21F, Looking... | reddit-passive_income | P2 | 24 | 2026-07-24 | 2026-07-24 | - |
 | 14f7f7b7 | Reddit r/passive_income: Virtual Assi... | reddit-passive_income | P2 | 23 | 2026-07-24 | 2026-07-24 | - |
+| a9ee65b8 | HN: GPT-6 Astra | hacker-news | P3 | 21 | 2026-09-03 | 2026-09-03 | - |
 | 246de4b7 | Reddit r/passive_income: I'm trying t... | reddit-passive_income | P2 | 18 | 2026-07-28 | 2026-07-28 | - |
 | e0bfb049 | HN: After Losses, Retail Investors Fl... | hacker-news | P2 | 15 | 2026-08-05 | 2026-08-05 | - |
 | 6e9f6cab | Reddit r/passive_income: 35$-50$ Guar... | reddit-passive_income | P2 | 13 | 2026-07-23 | 2026-07-23 | - |
