@@ -1,32 +1,51 @@
 # 📊 Research Master Log
 
-*Última actualización: 2026-09-04T03:31:04.746Z*
+*Última actualización: 2026-09-14T15:49:55.838Z*
 
 ## 📈 Resumen
 
 | Métrica | Valor |
 |---------|-------|
-| Total oportunidades | 5831 |
-| Activas/En progreso | 66 |
+| Total oportunidades | 6099 |
+| Activas/En progreso | 104 |
 | Implementadas | 0 |
-| Descartadas | 3991 |
+| Descartadas | 4027 |
 
-## ⏳ Pendientes de Aprobación (31)
+## ⏳ Pendientes de Aprobación (59)
 
 | ID | Título | Fuente | Prioridad | Score | Descubierto | Actualizado | Razón |
 |----|--------|--------|-----------|-------|-------------|-------------|-------|
+| dd52d409 | beefy: WETH-ARB (1403.0% APY) | defillama-yields | P4 | 78 | 2026-09-04 | 2026-09-04 | - |
+| 9a3700ff | uniswap-v4: USDC-KAI (2134.3% APY) | defillama-yields | P4 | 77 | 2026-09-09 | 2026-09-09 | - |
+| 757469ff | uniswap-v3: WETH-BASECAT (4581.6% APY) | defillama-yields | P4 | 77 | 2026-09-04 | 2026-09-04 | - |
 | 0268aa7d | uniswap-v4: ETH-CMETH (4535.2% APY) | defillama-yields | P4 | 77 | 2026-09-03 | 2026-09-03 | - |
 | 8cd7893b | aerodrome-slipstream: FLOCK-USDC (177... | defillama-yields | P4 | 77 | 2026-09-03 | 2026-09-03 | - |
+| 879e1f3e | aerodrome-slipstream: USDC-METAC (259... | defillama-yields | P4 | 76 | 2026-09-04 | 2026-09-04 | - |
+| 58963916 | aerodrome-slipstream: WETH-CBBTC (300... | defillama-yields | P4 | 76 | 2026-09-04 | 2026-09-04 | - |
+| b7df2070 | aerodrome-slipstream: USDC-NVDAC (271... | defillama-yields | P4 | 76 | 2026-09-04 | 2026-09-04 | - |
 | 50d699c6 | aerodrome-slipstream: SOL-USDC (4026.... | defillama-yields | P4 | 76 | 2026-09-03 | 2026-09-03 | - |
+| df61425e | aerodrome-slipstream: USDC-DIEM (3318... | defillama-yields | P4 | 75 | 2026-09-08 | 2026-09-08 | - |
+| ad36ef1b | uniswap-v4: ETH-BASECAT (1592.4% APY) | defillama-yields | P4 | 75 | 2026-09-05 | 2026-09-05 | - |
 | e67982c2 | aerodrome-slipstream: WETH-CBBTC (254... | defillama-yields | P4 | 75 | 2026-09-04 | 2026-09-04 | - |
 | 13ffe751 | HYPE volatility: 8.4% daily | coingecko-volatility | P4 | 75 | 2026-09-04 | 2026-09-04 | - |
+| fe44a338 | aerodrome-slipstream: USDC-TITN (1302... | defillama-yields | P4 | 74 | 2026-09-12 | 2026-09-12 | - |
+| 80458ba5 | aerodrome-slipstream: WETH-VVV (2084.... | defillama-yields | P4 | 74 | 2026-09-08 | 2026-09-08 | - |
+| 2daac3af | uniswap-v4: USDC-BLUECHIP (1389.8% APY) | defillama-yields | P4 | 74 | 2026-09-04 | 2026-09-04 | - |
 | 390e6155 | aerodrome-slipstream: WETH-CBBTC (218... | defillama-yields | P4 | 74 | 2026-09-04 | 2026-09-04 | - |
 | f2428ef2 | uniswap-v4: USDC-BLUECHIP (1955.2% APY) | defillama-yields | P4 | 74 | 2026-09-03 | 2026-09-03 | - |
 | bfe8076f | DeFi yield: aerodrome-slipstream USDC... | defillama-yields | P4 | 74 | 2026-08-14 | 2026-08-14 | - |
+| 10ac9f30 | aerodrome-slipstream: AERO-CBBTC (170... | defillama-yields | P4 | 73 | 2026-09-08 | 2026-09-08 | - |
+| ca7f4cd9 | aerodrome-slipstream: SOL-USDC (4949.... | defillama-yields | P4 | 73 | 2026-09-04 | 2026-09-04 | - |
 | 01dddc5a | uniswap-v4: USDC-BLUECHIP (2309.8% APY) | defillama-yields | P4 | 73 | 2026-09-03 | 2026-09-03 | - |
 | 16d05fad | DeFi yield: aerodrome-slipstream WETH... | defillama-yields | P4 | 73 | 2026-08-22 | 2026-08-22 | - |
 | 3e8b4048 | DeFi yield: aerodrome-slipstream USDC... | defillama-yields | P4 | 73 | 2026-08-18 | 2026-08-18 | - |
 | 091ea567 | DeFi yield: aerodrome-slipstream USDC... | defillama-yields | P4 | 73 | 2026-08-13 | 2026-08-13 | - |
+| 974bd5cb | aerodrome-slipstream: WETH-B3 (3033.7... | defillama-yields | P4 | 72 | 2026-09-13 | 2026-09-13 | - |
+| 1a9334c3 | aerodrome-slipstream: FUN-USDC (932.8... | defillama-yields | P4 | 72 | 2026-09-12 | 2026-09-12 | - |
+| 4cd671c8 | aerodrome-slipstream: WETH-DRV (1148.... | defillama-yields | P4 | 72 | 2026-09-05 | 2026-09-05 | - |
+| 75689615 | aerodrome-slipstream: VIRTUAL-WETH (1... | defillama-yields | P4 | 72 | 2026-09-05 | 2026-09-05 | - |
+| b1f772fe | aerodrome-slipstream: MSUSD-USDC (486... | defillama-yields | P4 | 72 | 2026-09-04 | 2026-09-04 | - |
+| 233fc6ab | aerodrome-slipstream: SOL-CBBTC (2525... | defillama-yields | P4 | 72 | 2026-09-04 | 2026-09-04 | - |
 | 85482d97 | aerodrome-slipstream: USDC-NVDAC (155... | defillama-yields | P4 | 72 | 2026-09-04 | 2026-09-04 | - |
 | 41984e56 | uniswap-v4: ETH-CMETH (4555.5% APY) | defillama-yields | P4 | 72 | 2026-09-04 | 2026-09-04 | - |
 | 07089efc | uniswap-v4: USDC-BLUECHIP (2227.6% APY) | defillama-yields | P4 | 72 | 2026-09-03 | 2026-09-03 | - |
@@ -34,11 +53,20 @@
 | 1d8c69bf | aerodrome-slipstream: USDC-AAPLC (287... | defillama-yields | P4 | 72 | 2026-09-03 | 2026-09-03 | - |
 | fe554404 | aerodrome-slipstream: ALIGN-USDC (253... | defillama-yields | P4 | 72 | 2026-09-03 | 2026-09-03 | - |
 | 9a7aafaa | DeFi yield: aerodrome-slipstream FUN-... | defillama-yields | P4 | 72 | 2026-08-16 | 2026-08-16 | - |
+| 5c3c2770 | supernova-cl: XAUT-USDT (1962.4% APY) | defillama-yields | P4 | 71 | 2026-09-08 | 2026-09-08 | - |
+| d7a33135 | TAO volatility: 7.5% daily | coingecko-volatility | P4 | 71 | 2026-09-05 | 2026-09-05 | - |
+| 7fda8699 | aerodrome-slipstream: WETH-MAMO (1451... | defillama-yields | P4 | 71 | 2026-09-04 | 2026-09-04 | - |
+| 1752e524 | ADA volatility: 8.2% daily | coingecko-volatility | P4 | 71 | 2026-09-04 | 2026-09-04 | - |
 | 5ac6785c | uniswap-v4: USDC-BLUECHIP (2305.3% APY) | defillama-yields | P4 | 71 | 2026-09-04 | 2026-09-04 | - |
 | 861c5fd3 | aerodrome-slipstream: SOL-USDC (1730.... | defillama-yields | P4 | 71 | 2026-09-04 | 2026-09-04 | - |
 | 278fe539 | DOGE volatility: 10.7% daily | coingecko-volatility | P4 | 71 | 2026-09-03 | 2026-09-03 | - |
 | 1e5e00c4 | uniswap-v4: ETH-CMETH (4537.3% APY) | defillama-yields | P4 | 71 | 2026-09-03 | 2026-09-03 | - |
 | ee27e7e0 | ZEC volatility: 18.7% daily | coingecko-volatility | P4 | 71 | 2026-09-03 | 2026-09-03 | - |
+| a56dbc28 | aerodrome-slipstream: USDC-PROS (4841... | defillama-yields | P4 | 70 | 2026-09-13 | 2026-09-13 | - |
+| 41027414 | uniswap-v4: USDC-SLVON (3688.4% APY) | defillama-yields | P4 | 70 | 2026-09-08 | 2026-09-08 | - |
+| 3ec66475 | uniswap-v4: GMT-USDT (2036.7% APY) | defillama-yields | P4 | 70 | 2026-09-04 | 2026-09-04 | - |
+| 139fbc08 | Texas Hold'em GTO Strategy Solver & A... | poker-analytics-repository | P4 | 70 | 2026-09-04 | 2026-09-04 | - |
+| 31e4715f | uniswap-v4: ETH-CMETH (4638.8% APY) | defillama-yields | P4 | 70 | 2026-09-04 | 2026-09-04 | - |
 | a8f987e8 | aerodrome-slipstream: SOL-USDC (1572.... | defillama-yields | P4 | 70 | 2026-09-04 | 2026-09-04 | - |
 | 49028694 | uniswap-v4: USDC-BLUECHIP (2072.1% APY) | defillama-yields | P4 | 70 | 2026-09-04 | 2026-09-04 | - |
 | 7552a705 | aerodrome-slipstream: SOL-CBBTC (2890... | defillama-yields | P4 | 70 | 2026-09-03 | 2026-09-03 | - |
@@ -47,13 +75,22 @@
 | 8cd0c7ff | DeFi yield: aerodrome-slipstream USDC... | defillama-yields | P4 | 70 | 2026-08-19 | 2026-08-19 | - |
 | 9e1a0fec | DeFi yield: aerodrome-slipstream AVNT... | defillama-yields | P4 | 70 | 2026-08-16 | 2026-08-16 | - |
 
-## 🔍 Activas (35)
+## 🔍 Activas (45)
 
 | ID | Título | Fuente | Prioridad | Score | Descubierto | Actualizado | Razón |
 |----|--------|--------|-----------|-------|-------------|-------------|-------|
+| 0832d68e | NEAR AI Agent Registry | near-ai | P1 | 92 | 2026-09-04 | 2026-09-04 | - |
+| d44d79a4 | Remotasks AI-assisted data annotation | remotasks | P2 | 80 | 2026-09-04 | 2026-09-04 | - |
+| 6aa199d3 | Scale AI data labeling with AI assist... | scale-ai | P2 | 78 | 2026-09-04 | 2026-09-04 | - |
+| 8c403824 | Appen AI data labeling automation | appen-connect | P2 | 78 | 2026-09-04 | 2026-09-04 | - |
+| 66552daf | Appen linguistic data collection auto... | appen-linguistic | P2 | 78 | 2026-09-04 | 2026-09-04 | - |
+| a4f80694 | Toloka AI crowdsourcing task automation | toloka | P2 | 77 | 2026-09-04 | 2026-09-04 | - |
+| 6f2c1ea9 | GitHub Repo: GuillermoEguilaz/Polymar... | github-arbitrage-search | P2 | 77 | 2026-09-04 | 2026-09-04 | - |
 | 9de58ca2 | AI content niche: Grok Bot’s 10 Featu... | content-platform | P1 | 76 | 2026-08-22 | 2026-08-22 | - |
 | 7e1b6da9 | Scale AI data labeling with AI assist... | scale-ai | P2 | 75 | 2026-09-03 | 2026-09-03 | - |
 | 2640f959 | AI content niche: Is AI Really Dimini... | content-platform | P3 | 75 | 2026-08-21 | 2026-08-21 | - |
+| d73882e1 | HN (Show): Show HN: Authorize MCP too... | hacker-news | P1 | 74 | 2026-09-14 | 2026-09-14 | - |
+| d063ff32 | GitHub Repo: kachence/polymm (88 ⭐) | github-arbitrage-search | P1 | 74 | 2026-09-04 | 2026-09-04 | - |
 | baf33724 | AI content niche: 9 AI Engineering Sk... | content-platform | P3 | 74 | 2026-08-22 | 2026-08-22 | - |
 | 965c0b03 | AI content niche: Beyond Simple Promp... | content-platform | P3 | 74 | 2026-08-21 | 2026-08-21 | - |
 | 7f486a19 | AI content niche: From Learning to Bu... | content-platform | P3 | 74 | 2026-08-21 | 2026-08-21 | - |
@@ -69,6 +106,7 @@
 | 61433d07 | AI content niche: To the Soon-to-Be G... | content-platform | P3 | 73 | 2026-08-20 | 2026-08-20 | - |
 | 79ba9f47 | AI content niche: Where AI Actually E... | content-platform | P3 | 73 | 2026-08-20 | 2026-08-20 | - |
 | 4249e2a2 | AI content niche: Is It Unethical For... | content-platform | P3 | 73 | 2026-08-20 | 2026-08-20 | - |
+| 4bbb398f | Clickworker UHRS search relevance tasks | clickworker-uhrs | P2 | 72 | 2026-09-04 | 2026-09-04 | - |
 | e9c90f4b | AI content niche: Living Planet Acade... | content-platform | P3 | 72 | 2026-08-22 | 2026-08-22 | - |
 | 0f34649d | AI content niche: An AI MOVIE Should ... | content-platform | P3 | 72 | 2026-08-22 | 2026-08-22 | - |
 | 18387d0b | AI content niche: Ki3 AI Review 2026:... | content-platform | P3 | 72 | 2026-08-21 | 2026-08-21 | - |
@@ -87,47 +125,232 @@
 | 735341ad | AI content niche: Self-Auditing Learn... | content-platform | P3 | 70 | 2026-08-21 | 2026-08-21 | - |
 | 9af7ecfc | AI content niche: The Model That Fail... | content-platform | P3 | 70 | 2026-08-20 | 2026-08-20 | - |
 
-## 🔬 En Profundización (123)
+## 🔬 En Profundización (308)
 
 | ID | Título | Fuente | Prioridad | Score | Descubierto | Actualizado | Razón |
 |----|--------|--------|-----------|-------|-------------|-------------|-------|
+| 2819e5ff | aerodrome-slipstream: USDC-AAA (2330.... | defillama-yields | P4 | 69 | 2026-09-08 | 2026-09-08 | - |
+| 5bf53288 | UNI volatility: 7.1% daily | coingecko-volatility | P4 | 69 | 2026-09-04 | 2026-09-04 | - |
 | 4727c097 | aerodrome-slipstream: WETH-CBBTC (280... | defillama-yields | P4 | 69 | 2026-09-04 | 2026-09-04 | - |
 | d1fc6770 | GitHub Repo: llSourcell/ChatGPT_Sport... | github-arbitrage-search | P2 | 69 | 2026-09-04 | 2026-09-04 | - |
 | edb7d215 | uniswap-v4: ETH-CMETH (4557.9% APY) | defillama-yields | P4 | 69 | 2026-09-04 | 2026-09-04 | - |
 | 154d11a5 | ADA volatility: 10.4% daily | coingecko-volatility | P4 | 69 | 2026-09-04 | 2026-09-04 | - |
 | 6498e852 | aerodrome-slipstream: USDC-CBBTC (396... | defillama-yields | P4 | 69 | 2026-09-03 | 2026-09-03 | - |
 | 96cedaf7 | aerodrome-slipstream: SOL-USDC (4144.... | defillama-yields | P4 | 69 | 2026-09-03 | 2026-09-03 | - |
+| 6099a3a1 | uniswap-v4: STOCKER-USDC (4965.2% APY) | defillama-yields | P4 | 68 | 2026-09-08 | 2026-09-08 | - |
+| 022f52c4 | uniswap-v3: USDC-BASECAT (2289.3% APY) | defillama-yields | P4 | 68 | 2026-09-08 | 2026-09-08 | - |
+| 50e4eff4 | OKB volatility: 7.7% daily | coingecko-volatility | P4 | 68 | 2026-09-05 | 2026-09-05 | - |
+| c20fcef5 | DOGE volatility: 7.1% daily | coingecko-volatility | P4 | 68 | 2026-09-04 | 2026-09-04 | - |
 | d8f28a4b | DOGE volatility: 9.5% daily | coingecko-volatility | P4 | 68 | 2026-09-04 | 2026-09-04 | - |
 | 5c310195 | uniswap-v4: USDC-BLUECHIP (2203.5% APY) | defillama-yields | P4 | 68 | 2026-09-04 | 2026-09-04 | - |
 | 1ac82145 | aerodrome-slipstream: USDC-CBBTC (246... | defillama-yields | P4 | 68 | 2026-09-03 | 2026-09-03 | - |
 | 5d911fb4 | ADA volatility: 12.7% daily | coingecko-volatility | P4 | 68 | 2026-09-03 | 2026-09-03 | - |
+| 1d673bdd | HN: LG denies TV spying claims, says ... | hacker-news | P3 | 67 | 2026-09-12 | 2026-09-12 | - |
+| db061e63 | DOT volatility: 9.3% daily | coingecko-volatility | P4 | 67 | 2026-09-08 | 2026-09-08 | - |
+| 257ec53b | NEAR volatility: 14.1% daily | coingecko-volatility | P4 | 67 | 2026-09-04 | 2026-09-04 | - |
+| ebb85542 | uniswap-v3: WETH-STONKEX (1331.8% APY) | defillama-yields | P4 | 67 | 2026-09-04 | 2026-09-04 | - |
+| 9930d079 | uniswap-v4: BSTONK-USDC (2010.9% APY) | defillama-yields | P4 | 67 | 2026-09-04 | 2026-09-04 | - |
 | c7b23400 | NEAR volatility: 8.0% daily | coingecko-volatility | P4 | 67 | 2026-09-04 | 2026-09-04 | - |
 | fd2f425e | aerodrome-slipstream: AVNT-USDC (2543... | defillama-yields | P4 | 67 | 2026-09-04 | 2026-09-04 | - |
 | ea1404cb | aerodrome-slipstream: SOL-USDC (3819.... | defillama-yields | P4 | 67 | 2026-09-03 | 2026-09-03 | - |
 | a97cfd62 | aerodrome-slipstream: WETH-CBBTC (287... | defillama-yields | P4 | 67 | 2026-09-03 | 2026-09-03 | - |
 | 1eaa7be3 | SUI volatility: 10.0% daily | coingecko-volatility | P4 | 67 | 2026-09-03 | 2026-09-03 | - |
+| 08f9dd47 | aerodrome-slipstream: USDC-MSFTC (367... | defillama-yields | P4 | 66 | 2026-09-14 | 2026-09-14 | - |
+| 33f2882e | GitHub trending: <svg aria-hidden="tr... | github-trending | P2 | 66 | 2026-09-14 | 2026-09-14 | - |
+| 3b50dc63 | aerodrome-slipstream: FLOCK-USDC (285... | defillama-yields | P4 | 66 | 2026-09-04 | 2026-09-04 | - |
 | 27416a39 | aerodrome-slipstream: WETH-CBBTC (211... | defillama-yields | P4 | 66 | 2026-09-03 | 2026-09-03 | - |
 | d8f0ad05 | XRP volatility: 10.5% daily | coingecko-volatility | P4 | 66 | 2026-09-03 | 2026-09-03 | - |
+| 0a1e7604 | aerodrome-slipstream: USDC-SNDKC (210... | defillama-yields | P4 | 65 | 2026-09-13 | 2026-09-13 | - |
+| 3fc524c5 | uniswap-v4: ETH-FUSE (2299.0% APY) | defillama-yields | P4 | 65 | 2026-09-12 | 2026-09-12 | - |
+| 94c9d61f | XMR volatility: 13.0% daily | coingecko-volatility | P4 | 65 | 2026-09-04 | 2026-09-04 | - |
 | 51f9b0e2 | HBAR volatility: 10.3% daily | coingecko-volatility | P4 | 65 | 2026-09-03 | 2026-09-03 | - |
+| 104cceb8 | HN (Show): Show HN: Kibble – a reader... | hacker-news | P3 | 64 | 2026-09-13 | 2026-09-13 | - |
+| 18a2c900 | WLFI volatility: 11.0% daily | coingecko-volatility | P4 | 64 | 2026-09-12 | 2026-09-12 | - |
+| a0f2bd76 | aerodrome-slipstream: ALIGN-USDC (337... | defillama-yields | P4 | 64 | 2026-09-10 | 2026-09-10 | - |
+| fe10fb0b | uniswap-v4: AP-USDC (2712.4% APY) | defillama-yields | P4 | 64 | 2026-09-08 | 2026-09-08 | - |
+| c34b0263 | HN (Show): Show HN: Marketplace for f... | hacker-news | P1 | 64 | 2026-09-04 | 2026-09-04 | - |
 | bd8e80fc | ZEC volatility: 20.4% daily | coingecko-volatility | P4 | 64 | 2026-09-04 | 2026-09-04 | - |
 | dc48cec7 | HBAR volatility: 8.6% daily | coingecko-volatility | P4 | 64 | 2026-09-04 | 2026-09-04 | - |
 | 1a548605 | UNI volatility: 15.0% daily | coingecko-volatility | P4 | 64 | 2026-09-03 | 2026-09-03 | - |
 | 79f5ba76 | HBAR volatility: 8.9% daily | coingecko-volatility | P4 | 64 | 2026-09-03 | 2026-09-03 | - |
 | 077e27a5 | DOGE volatility: 11.1% daily | coingecko-volatility | P4 | 64 | 2026-09-03 | 2026-09-03 | - |
+| a2a48925 | BTW volatility: 44.4% daily | coingecko-volatility | P4 | 63 | 2026-09-13 | 2026-09-13 | - |
+| 4e7002ff | BCH volatility: 6.4% daily | coingecko-volatility | P4 | 63 | 2026-09-05 | 2026-09-05 | - |
+| 606a1f81 | aerodrome-slipstream: USDC-AAPLC (299... | defillama-yields | P4 | 63 | 2026-09-04 | 2026-09-04 | - |
+| bf35f690 | SUI volatility: 7.5% daily | coingecko-volatility | P4 | 63 | 2026-09-04 | 2026-09-04 | - |
+| 175d1e2d | XRP volatility: 7.2% daily | coingecko-volatility | P4 | 63 | 2026-09-04 | 2026-09-04 | - |
 | ada3bd18 | aerodrome-slipstream: USDC-CBBTC (238... | defillama-yields | P4 | 63 | 2026-09-04 | 2026-09-04 | - |
+| a62d71e3 | RAIN volatility: 7.1% daily | coingecko-volatility | P4 | 62 | 2026-09-12 | 2026-09-12 | - |
+| e59f0a28 | HYPE volatility: 6.3% daily | coingecko-volatility | P4 | 62 | 2026-09-08 | 2026-09-08 | - |
+| 7328cbc8 | CRO volatility: 13.2% daily | coingecko-volatility | P4 | 62 | 2026-09-08 | 2026-09-08 | - |
 | 66252238 | ZEC volatility: 21.5% daily | coingecko-volatility | P4 | 62 | 2026-09-03 | 2026-09-03 | - |
 | bddbcc53 | HBAR volatility: 9.7% daily | coingecko-volatility | P4 | 62 | 2026-09-03 | 2026-09-03 | - |
+| d7d6dae6 | HN (Show): Show HN: Prmptree – AI ema... | hacker-news | P1 | 61 | 2026-09-14 | 2026-09-14 | - |
+| 888ee4ba | aerodrome-slipstream: USDC-LAPTOP (42... | defillama-yields | P4 | 61 | 2026-09-10 | 2026-09-10 | - |
+| 23874d31 | WBT volatility: 9.1% daily | coingecko-volatility | P4 | 61 | 2026-09-08 | 2026-09-08 | - |
+| f7d07777 | MORPHO volatility: 6.6% daily | coingecko-volatility | P4 | 61 | 2026-09-04 | 2026-09-04 | - |
 | 313ba7f6 | NEAR volatility: 8.6% daily | coingecko-volatility | P4 | 61 | 2026-09-04 | 2026-09-04 | - |
+| 6b429026 | GitHub trending: <svg aria-hidden="tr... | github-trending | P3 | 60 | 2026-09-12 | 2026-09-12 | - |
+| 8ec7af62 | HN: The largest electric aircraft jus... | hacker-news | P3 | 59 | 2026-09-04 | 2026-09-04 | - |
+| d1bce083 | GitHub Repo: llSourcell/ChatGPT_Sport... | github-arbitrage-search | P2 | 59 | 2026-09-04 | 2026-09-04 | - |
 | db1f2b66 | SUI volatility: 9.6% daily | coingecko-volatility | P4 | 59 | 2026-09-03 | 2026-09-03 | - |
+| 367c29a9 | uniswap-v4: ETH-SEND (1844.3% APY) | defillama-yields | P4 | 58 | 2026-09-13 | 2026-09-13 | - |
+| 2acd86ba | HN (Show): Show HN: LLM Attention Vis... | hacker-news | P3 | 58 | 2026-09-08 | 2026-09-08 | - |
+| 6716d8ae | ONDO volatility: 7.4% daily | coingecko-volatility | P4 | 58 | 2026-09-05 | 2026-09-05 | - |
+| da911141 | CC volatility: 7.0% daily | coingecko-volatility | P4 | 58 | 2026-09-04 | 2026-09-04 | - |
+| 0d746d26 | ASTER volatility: 7.0% daily | coingecko-volatility | P4 | 58 | 2026-09-04 | 2026-09-04 | - |
 | a66bb93c | XRP volatility: 9.6% daily | coingecko-volatility | P4 | 58 | 2026-09-04 | 2026-09-04 | - |
 | 40bf0424 | ADA volatility: 13.8% daily | coingecko-volatility | P4 | 58 | 2026-09-03 | 2026-09-03 | - |
 | a110f8c5 | XMR volatility: 9.5% daily | coingecko-volatility | P4 | 58 | 2026-09-03 | 2026-09-03 | - |
 | 02fded4d | HN: Porting my 1993 Amiga game to God... | hacker-news | P3 | 58 | 2026-09-03 | 2026-09-03 | - |
+| c8259717 | HN: How well do agents use test/verif... | hacker-news | P1 | 57 | 2026-09-08 | 2026-09-08 | - |
+| 31e9d995 | LTC volatility: 6.0% daily | coingecko-volatility | P4 | 57 | 2026-09-05 | 2026-09-05 | - |
 | 478988d4 | ADA volatility: 10.9% daily | coingecko-volatility | P4 | 57 | 2026-09-04 | 2026-09-04 | - |
 | 27c3da45 | Texas Hold'em GTO Strategy Solver & A... | poker-analytics-repository | P4 | 57 | 2026-09-03 | 2026-09-03 | - |
 | 84239f2a | Cross-Platform Sports & Prediction Ma... | surebet-discovery-network | P1 | 57 | 2026-09-03 | 2026-09-03 | - |
+| 1c11fc25 | HN (Show): Show HN: Hacker News, With... | hacker-news | P3 | 56 | 2026-09-12 | 2026-09-12 | - |
 | d74ae4cf | LINK volatility: 8.5% daily | coingecko-volatility | P4 | 56 | 2026-09-04 | 2026-09-04 | - |
 | 04575bd7 | GitHub Repo: llSourcell/ChatGPT_Sport... | github-arbitrage-search | P2 | 56 | 2026-09-03 | 2026-09-03 | - |
+| 563b0b80 | HN: There Is No AI (It's Just People)... | hacker-news | P3 | 55 | 2026-09-13 | 2026-09-13 | - |
+| 97049405 | HN: Tell HN: OpenAI keeps re-enabling... | hacker-news | P3 | 55 | 2026-09-10 | 2026-09-10 | - |
+| 87ea6988 | HN (Show): Show HN: Booley – open-sou... | hacker-news | P1 | 55 | 2026-09-09 | 2026-09-09 | - |
+| 5587a84b | BNB volatility: 6.5% daily | coingecko-volatility | P4 | 55 | 2026-09-05 | 2026-09-05 | - |
+| 3b23649c | LINK volatility: 5.8% daily | coingecko-volatility | P4 | 55 | 2026-09-05 | 2026-09-05 | - |
+| 7dc01261 | HN: Can AI design circuit boards yet? | hacker-news | P3 | 55 | 2026-09-04 | 2026-09-04 | - |
+| 99c169e1 | aerodrome-slipstream: USDC-CBBTC (318... | defillama-yields | P4 | 55 | 2026-09-04 | 2026-09-04 | - |
+| 8b78794c | ZEC volatility: 9.6% daily | coingecko-volatility | P4 | 55 | 2026-09-04 | 2026-09-04 | - |
+| f87f2997 | HN: Where has Construction Automation... | hacker-news | P2 | 54 | 2026-09-14 | 2026-09-14 | - |
+| 1ecb36e0 | HN (Show): Show HN: Crypto portfolio ... | hacker-news | P1 | 54 | 2026-09-14 | 2026-09-14 | - |
+| 7d77b1eb | HN: TailTalk: A modern async user spa... | hacker-news | P3 | 54 | 2026-09-13 | 2026-09-13 | - |
+| e650dd6c | PUMP volatility: 10.1% daily | coingecko-volatility | P4 | 54 | 2026-09-08 | 2026-09-08 | - |
+| a17262bb | HN: A Design Space Exploration of Asy... | hacker-news | P3 | 53 | 2026-09-12 | 2026-09-12 | - |
+| 940ec1f2 | HN (Show): Show HN: I wrote a book on... | hacker-news | P3 | 53 | 2026-09-12 | 2026-09-12 | - |
+| bdabb677 | HN: Jabber/XMPP: How Do We Gain Tract... | hacker-news | P3 | 52 | 2026-09-14 | 2026-09-14 | - |
+| 09920c61 | HN: Why are AI agents lying, cheating... | hacker-news | P1 | 52 | 2026-09-13 | 2026-09-13 | - |
+| 5282b88e | HN: Why is the x86 undefined instruct... | hacker-news | P4 | 52 | 2026-09-13 | 2026-09-13 | - |
+| b1493760 | HN: I Fixed a Tractor Using John Deer... | hacker-news | P1 | 52 | 2026-09-12 | 2026-09-12 | - |
+| 8fc4d944 | HN: RubyGems Open Source Supply Chain... | hacker-news | P3 | 51 | 2026-09-14 | 2026-09-14 | - |
+| 405450fe | HN (Show): Show HN: I made an automat... | hacker-news | P3 | 51 | 2026-09-13 | 2026-09-13 | - |
+| 802c3fcf | HN: Nvidia is the central bank of AI | hacker-news | P3 | 51 | 2026-09-12 | 2026-09-12 | - |
+| b4868620 | HN (Show): Show HN: What an agent doe... | hacker-news | P1 | 50 | 2026-09-14 | 2026-09-14 | - |
+| a1a2a2ec | aerodrome-slipstream: USDC-TSLAC (411... | defillama-yields | P4 | 50 | 2026-09-14 | 2026-09-14 | - |
+| 7055e94f | XLM volatility: 9.6% daily | coingecko-volatility | P4 | 50 | 2026-09-14 | 2026-09-14 | - |
+| eb85049b | HN: OpenArch – PyTorch implementation... | hacker-news | P3 | 50 | 2026-09-14 | 2026-09-14 | - |
+| eae35f05 | HN (Show): Show HN: I built Otis, a m... | hacker-news | P1 | 50 | 2026-09-14 | 2026-09-14 | - |
+| 1ead144b | HN (Show): Show HN: Vehla – the AI co... | hacker-news | P3 | 50 | 2026-09-13 | 2026-09-13 | - |
+| 93b9ef65 | HN: Sean Carroll explains the biggest... | hacker-news | P3 | 50 | 2026-09-13 | 2026-09-13 | - |
+| a4e01960 | uniswap-v4: ETH-LSK (1512.1% APY) | defillama-yields | P4 | 50 | 2026-09-13 | 2026-09-13 | - |
+| 683c81e4 | HN (Show): Show HN: I built my own kn... | hacker-news | P3 | 50 | 2026-09-13 | 2026-09-13 | - |
+| 47881e54 | HN (Show): Show HN: Deeplearning from... | hacker-news | P4 | 50 | 2026-09-13 | 2026-09-13 | - |
+| 3498ba78 | HN (Show): Show HN: Everything a web ... | hacker-news | P3 | 50 | 2026-09-13 | 2026-09-13 | - |
+| e7be5a0c | HN: google.com/goto: Google's anti-sc... | hacker-news | P1 | 50 | 2026-09-12 | 2026-09-12 | - |
+| c1d25f95 | HN: How Trail of Bits helps verify th... | hacker-news | P3 | 50 | 2026-09-12 | 2026-09-12 | - |
+| 5c6df173 | HN: Moby-Dick and the Indefinite Subl... | hacker-news | P4 | 50 | 2026-09-12 | 2026-09-12 | - |
+| 90d2cd0d | HN (Show): Show HN: Graphify C# – Com... | hacker-news | P1 | 50 | 2026-09-12 | 2026-09-12 | - |
+| 7d2164af | HN (Show): Show HN: We built a local-... | hacker-news | P1 | 50 | 2026-09-12 | 2026-09-12 | - |
+| e68c393b | HN (Show): Show HN: Hacker News, with... | hacker-news | P3 | 50 | 2026-09-12 | 2026-09-12 | - |
+| 1e24c518 | HN (Show): Show HN: I graded 200 AI t... | hacker-news | P3 | 50 | 2026-09-10 | 2026-09-10 | - |
+| add34506 | HN (Show): Show HN: Botbin.io – paste... | hacker-news | P1 | 50 | 2026-09-10 | 2026-09-10 | - |
+| 3ac120a6 | HN: DeepSeek launches v4.1 flash, pos... | hacker-news | P3 | 50 | 2026-09-10 | 2026-09-10 | - |
+| 114647f4 | HN: Shopify acquires Tailwind | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 645cc1b9 | HN: AirPods 5 | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| e5163857 | HN: Procedural Graphs: Self-Evolving ... | hacker-news | P1 | 50 | 2026-09-09 | 2026-09-09 | - |
+| ffb7c759 | HN (Show): Show HN: Self-hosted compa... | hacker-news | P1 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 2e60ce97 | HN: Apple Introduces AirPods 5 | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| bc8c18bf | HN: Qwen 3.8 follows GPT-5.5 Pro reas... | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| c4f4fc51 | HN (Show): Show HN: A guestbook for h... | hacker-news | P1 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 6c270a46 | HN (Show): Show HN: An open-source SA... | hacker-news | P1 | 50 | 2026-09-09 | 2026-09-09 | - |
+| abc13231 | HN: GPT-6 Astra, Looped Transformers,... | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| be148dd2 | HN: Rails 8 Guide: Features, Requirem... | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 543fc8d0 | HN: Defining AI Psychosis. Part 2: "P... | hacker-news | P4 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 6cdc7e45 | HN (Show): Show HN: GBDL – one Markdo... | hacker-news | P1 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 287dfcd8 | HN (Show): Show HN: Mushrooms – A per... | hacker-news | P1 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 89d9571c | HN (Show): Show HN: Moral.games, a 1v... | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| e2793cb2 | HN (Show): Show HN: Locksmith: Store ... | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 3bfe21fd | HN (Show): Show HN: A better ChatGPT ... | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 4a5fbdd9 | HN (Show): Show HN: Geiger – See ever... | hacker-news | P1 | 50 | 2026-09-09 | 2026-09-09 | - |
+| edf4b042 | HN: Anthropic researcher says more th... | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 8c589ead | HN (Show): Show HN: Parlel – LinkedIn... | hacker-news | P1 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 597fdd45 | HN: Tailwind Labs is joining Shopify | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 8e5a0f61 | HN: DeepSeek launching v4.1 flash che... | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| cb4c470d | HN (Show): Show HN: Parlel – professi... | hacker-news | P1 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 86a9b235 | HN (Show): Show HN: Hazzel – A tiny, ... | hacker-news | P1 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 1e48f3de | HN: How An AI math breakthrough ignit... | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 9ecb4d1c | HN (Show): Show HN: AgentPulse – Clau... | hacker-news | P1 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 9c5a661a | HN: Gambling with our lives: AI resea... | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| b4aed83d | HN: How GPT‑5.6 Sol helps run quantum... | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| a1871be4 | HN: “Tweet” and the bird logo apparen... | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 0d8e0bc8 | HN (Show): Show HN: AI-first open-sou... | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| e87f21bf | HN (Show): Show HN: Estimate your AI ... | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| f7076594 | HN: AI Responsibility – OpenAI and An... | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| bedf3cfb | HN: Muse – Meta’s personal AI agent | hacker-news | P1 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 2cb601a8 | HN: Tao: Open math problems being non... | hacker-news | P3 | 50 | 2026-09-09 | 2026-09-09 | - |
+| 4fd99a54 | HN: 100s of flights cancelled at UK a... | hacker-news | P3 | 50 | 2026-09-08 | 2026-09-08 | - |
+| 0727a53c | HN: Muse: Meta's personal AI agent, f... | hacker-news | P1 | 50 | 2026-09-08 | 2026-09-08 | - |
+| 1abc5003 | aerodrome-slipstream: USDC-POD (3703.... | defillama-yields | P4 | 50 | 2026-09-08 | 2026-09-08 | - |
+| 7d81393c | HN: ChatGPT Images 2.5 | hacker-news | P3 | 50 | 2026-09-08 | 2026-09-08 | - |
+| 3236b328 | HN (Show): Show HN: Linubot – like Gr... | hacker-news | P2 | 50 | 2026-09-08 | 2026-09-08 | - |
+| 542ac9d6 | HN: I-have-ADHD: A skill to stop codi... | hacker-news | P1 | 50 | 2026-09-08 | 2026-09-08 | - |
+| 101e21d9 | HN (Show): Show HN: Making a GBA game... | hacker-news | P3 | 50 | 2026-09-08 | 2026-09-08 | - |
+| 39a14c6a | HN (Show): Show HN: Bestie, a coding ... | hacker-news | P1 | 50 | 2026-09-08 | 2026-09-08 | - |
+| d7d097bb | HN: Tell HN: OpenAI keeps stealing my... | hacker-news | P3 | 50 | 2026-09-08 | 2026-09-08 | - |
+| 4181337b | HN: The two Christian saints who are ... | hacker-news | P3 | 50 | 2026-09-08 | 2026-09-08 | - |
+| 8168bc59 | HN (Show): Show HN: EndFrame – Demos,... | hacker-news | P3 | 50 | 2026-09-08 | 2026-09-08 | - |
+| ec420b1c | HN (Show): Show HN: Multistack, a TUI... | hacker-news | P1 | 50 | 2026-09-08 | 2026-09-08 | - |
+| b8fb5cfe | HN: LibreOffice breaks download recor... | hacker-news | P3 | 50 | 2026-09-08 | 2026-09-08 | - |
+| 0aa27929 | HN: We Must Return to the Office to U... | hacker-news | P3 | 50 | 2026-09-08 | 2026-09-08 | - |
+| 2123cc8f | HN: Why human syntax breaks LLMs (and... | hacker-news | P1 | 50 | 2026-09-08 | 2026-09-08 | - |
+| e90901ee | HN: There's a new "Google Jail" for i... | hacker-news | P3 | 50 | 2026-09-08 | 2026-09-08 | - |
+| 55b76679 | HN: Mistral raises €3B | hacker-news | P3 | 50 | 2026-09-08 | 2026-09-08 | - |
+| 5818c480 | HN: Arm Mali G2-Ultra NX GPU: desktop... | hacker-news | P3 | 50 | 2026-09-08 | 2026-09-08 | - |
+| 75a8d13a | HN: Robot writes in languages it has ... | hacker-news | P2 | 50 | 2026-09-08 | 2026-09-08 | - |
+| aebc9794 | HN (Show): Show HN: Jigsaw Haiku | hacker-news | P3 | 50 | 2026-09-08 | 2026-09-08 | - |
+| 556136c1 | HN (Show): Show HN: I made Artle – a ... | hacker-news | P3 | 50 | 2026-09-08 | 2026-09-08 | - |
+| 91efc48e | HN (Show): Show HN: Doc-scraper, offl... | hacker-news | P1 | 50 | 2026-09-08 | 2026-09-08 | - |
+| 67c717fa | HN (Show): Show HN: Engrim – A univer... | hacker-news | P3 | 50 | 2026-09-08 | 2026-09-08 | - |
+| e7369233 | aerodrome-slipstream: WETH-BASECAT (4... | defillama-yields | P4 | 50 | 2026-09-05 | 2026-09-05 | - |
+| 3c21544d | SHIB volatility: 7.7% daily | coingecko-volatility | P4 | 50 | 2026-09-05 | 2026-09-05 | - |
+| 19e8be01 | HN: AI handles incidents, engineers l... | hacker-news | P3 | 50 | 2026-09-05 | 2026-09-05 | - |
+| a2085fb1 | ekubo: ETH-EKUBO (1182.3% APY) | defillama-yields | P4 | 50 | 2026-09-05 | 2026-09-05 | - |
+| 64393589 | HN: GPT-6 Astra in code review: Gains... | hacker-news | P3 | 50 | 2026-09-05 | 2026-09-05 | - |
+| 3c86a3d2 | GRAM volatility: 5.9% daily | coingecko-volatility | P4 | 50 | 2026-09-05 | 2026-09-05 | - |
+| bfb37597 | HN (Show): Show HN: Moadim.io – A sch... | hacker-news | P1 | 50 | 2026-09-05 | 2026-09-05 | - |
+| 9061113d | HN (Show): Show HN: Agent-to-agent pa... | hacker-news | P1 | 50 | 2026-09-05 | 2026-09-05 | - |
+| caaa26f4 | HN: GPT-6 Astra on OpenRouter | hacker-news | P3 | 50 | 2026-09-04 | 2026-09-04 | - |
+| faa6cc95 | HN (Show): Show HN: Sageling - a loca... | hacker-news | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
+| cd06295e | HN (Show): Show HN: Covenant – A gove... | hacker-news | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
+| a7fe295a | HN (Ask): Ask HN: Why were OpenAI, Cl... | hacker-news | P3 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 803467ea | HN: Nobody Is Saying Why OpenAI and A... | hacker-news | P3 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 1700a0fb | HN (Show): Show HN: TERMy – A fast te... | hacker-news | P3 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 03198ee4 | HN: Corporate America is getting hook... | hacker-news | P3 | 50 | 2026-09-04 | 2026-09-04 | - |
+| ae2abb38 | HN (Show): Show HN: Declick – Turn an... | hacker-news | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
+| f43a1ea7 | HN (Show): Show HN: Audioreality.ai –... | hacker-news | P3 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 29c6ba4c | HN (Show): Show HN: Webmcp-react v1.0... | hacker-news | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 41815620 | HN (Show): Show HN: What if AI did th... | hacker-news | P3 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 3cd0045b | GitHub trending: <svg aria-hidden="tr... | github-trending | P3 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 654b62f2 | uniswap-v4: USDC-BLUECHIP (1850.4% APY) | defillama-yields | P4 | 50 | 2026-09-04 | 2026-09-04 | - |
+| ccf19bc7 | HN: Google AI Mode shows same product... | hacker-news | P3 | 50 | 2026-09-04 | 2026-09-04 | - |
+| bc52ec45 | HN: Discovery of a new OpenAI agent m... | hacker-news | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 21ab2fa1 | HN: GMails custom domain "send as" di... | hacker-news | P3 | 50 | 2026-09-04 | 2026-09-04 | - |
+| edbcdf33 | HN: Qwen 3.8 27B available on Cerebra... | hacker-news | P3 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 1ea4b3a2 | HN: Nearly impossible? How Fairphone ... | hacker-news | P3 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 7d5bbd08 | Publish automation actors on Apify ma... | apify-store | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
+| d3123e44 | Build data collection pipelines with ... | bright-data | P2 | 50 | 2026-09-04 | 2026-09-04 | - |
+| c66193ab | Provably Fair Virtual Casino Mathemat... | gaming-mathematics-lab | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 600f938a | Cross-Platform Sports & Prediction Ma... | surebet-discovery-network | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 3550bc84 | GitHub Repo: datamllab/rlcard (3541 ⭐) | github-arbitrage-search | P2 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 27160f71 | GitHub Repo: CharlieHess/slack-poker-... | github-arbitrage-search | P2 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 568fab54 | aerodrome-slipstream: AVNT-USDC (2513... | defillama-yields | P4 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 1217cc8f | Horizen EON Agent Integration | horizen-labs | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 8c52135a | GitHub: AgenC | github-agent-protocol | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 48a3223c | GitHub: mergeos | github-agent-protocol | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 10704490 | GitHub: -1 | github-agent-protocol | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 43607b5e | GitHub: Trustdev-Web3-Portfolio | github-agent-protocol | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 2b7b5367 | AutoGPT Forge Integration | ai-agent-store-autogpt-forge | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
+| c70bbedd | LangChain Hub Integration | ai-agent-store-langchain-hub | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 3b5b5caa | CrewAI Marketplace Integration | ai-agent-store-crewai-marketplace | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
+| 9eed9600 | Fixie.ai Agent Platform Integration | ai-agent-store-fixie.ai-agent-platform | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
+| ecd01e5e | OKX Web3 Agent Integration | okx-agents | P1 | 50 | 2026-09-04 | 2026-09-04 | - |
 | 810ad71b | LINK volatility: 7.6% daily | coingecko-volatility | P4 | 50 | 2026-09-04 | 2026-09-04 | - |
 | 04fccaf1 | LINK volatility: 7.9% daily | coingecko-volatility | P4 | 50 | 2026-09-04 | 2026-09-04 | - |
 | 55ca1738 | aerodrome-slipstream: SOL-USDC (3605.... | defillama-yields | P4 | 50 | 2026-09-04 | 2026-09-04 | - |
@@ -468,10 +691,12 @@
 | 8b766aee | AI content niche: The MCP Playbook fo... | content-platform | P3 | 70 | 2026-08-10 | 2026-08-19 | - |
 | 5dbac35c | AI content niche: Titans: Learning to... | content-platform | P3 | 70 | 2026-08-10 | 2026-08-19 | - |
 
-## ❌ Descartadas (3991)
+## ❌ Descartadas (4027)
 
 | ID | Título | Fuente | Prioridad | Score | Descubierto | Actualizado | Razón |
 |----|--------|--------|-----------|-------|-------------|-------------|-------|
+| 20138bd4 | x402 Payment Protocol Integration | x402-protocol | P1 | 96 | 2026-09-04 | 2026-09-04 | - |
+| e4f2182d | Automate Clickworker AI training data... | clickworker | P2 | 90 | 2026-09-04 | 2026-09-04 | - |
 | 7bc4f68e | DeFi yield: aerodrome-slipstream AVNT... | defillama-yields | P4 | 75 | 2026-08-11 | 2024-08-12 | - |
 | ede663a5 | DeFi yield: aerodrome-slipstream USDC... | defillama-yields | P4 | 73 | 2026-08-05 | 2024-08-12 | - |
 | f8a572af | DeFi yield: aerodrome-slipstream AVNT... | defillama-yields | P4 | 73 | 2026-08-03 | 2024-08-12 | - |
@@ -605,6 +830,7 @@
 | 067249b9 | DeFi yield: aerodrome-slipstream WETH... | defillama-yields | P4 | 68 | 2026-08-01 | 2024-08-12 | - |
 | 3e996e4a | DeFi yield: aerodrome-slipstream USDC... | defillama-yields | P4 | 68 | 2026-08-01 | 2024-08-12 | - |
 | e0b42944 | DeFi yield: aerodrome-slipstream USDC... | defillama-yields | P4 | 68 | 2026-08-01 | 2024-08-12 | - |
+| 4a4cdf4b | Agent Protocol A2A Standard Implement... | agent-protocol | P1 | 67 | 2026-09-04 | 2026-09-04 | - |
 | f516f199 | Funding rate arb: KAITO long (406% ann.) | hyperliquid-funding | P4 | 67 | 2026-08-12 | 2024-08-12 | - |
 | a4171fc9 | DeFi yield: aerodrome-slipstream USDC... | defillama-yields | P4 | 67 | 2026-08-12 | 2024-08-12 | - |
 | ce2684a9 | TikTok trending: patriot games | tiktok-trends | P3 | 67 | 2026-08-11 | 2026-08-11 | - |
@@ -2313,6 +2539,7 @@
 | e067df94 | DeFi yield: aerodrome-slipstream CTR-... | defillama-yields | P4 | 53 | 2026-07-21 | 2024-08-12 | - |
 | 19f1ae33 | DeFi yield: aerodrome-slipstream WETH... | defillama-yields | P4 | 53 | 2026-07-21 | 2024-08-12 | - |
 | 923c9b30 | DeFi yield: aerodrome-slipstream WETH... | defillama-yields | P4 | 53 | 2026-07-21 | 2024-08-12 | - |
+| ff5c3a63 | Automate MTurk data entry tasks via P... | amazon-mturk | P2 | 52 | 2026-09-04 | 2026-09-04 | - |
 | a701f6ac | DeFi yield: aerodrome-slipstream USDC... | defillama-yields | P4 | 52 | 2026-08-12 | 2026-08-12 | - |
 | 02e5a735 | HN: High-Res Photo Shows Sand-Capped ... | hacker-news | P2 | 52 | 2026-08-12 | 2026-08-12 | - |
 | 3244d6e2 | DeFi yield: aerodrome-slipstream WETH... | defillama-yields | P4 | 52 | 2026-08-11 | 2024-08-12 | - |
@@ -2537,6 +2764,7 @@
 | 0a362ef9 | HN: Airport Simulator | hacker-news | P2 | 50 | 2026-07-20 | 2026-08-12 | - |
 | 2d02e5a9 | HN: Launch HN: Bloomy (YC S26) – AI-p... | hacker-news | P2 | 50 | 2026-07-20 | 2026-08-12 | - |
 | 088b9d70 | HN: China's open-weights AI strategy ... | hacker-news | P2 | 50 | 2026-07-20 | 2026-08-12 | - |
+| 49f27203 | HN: Making Startups Powerful | hacker-news | P3 | 49 | 2026-09-13 | 2026-09-13 | - |
 | 7a7d756d | DeFi yield: aerodrome-slipstream WETH... | defillama-yields | P4 | 49 | 2026-08-22 | 2026-08-22 | - |
 | 025ef405 | Funding rate arb: APEX short (62% ann.) | hyperliquid-funding | P4 | 49 | 2026-08-22 | 2026-08-22 | - |
 | 42604cd7 | New Base protocol: SquadSwap Thanos (... | defillama-new-protocols | P4 | 49 | 2026-08-22 | 2026-08-22 | - |
@@ -2729,6 +2957,9 @@
 | 87779259 | DeFi yield: zeebu ZBU (Base) - 3215.5... | defillama-yields | P4 | 48 | 2026-07-20 | 2026-07-20 | - |
 | 29e99f28 | DeFi yield: aerodrome-slipstream SOL-... | defillama-yields | P4 | 48 | 2026-07-20 | 2026-07-20 | - |
 | 4210cd1d | Funding rate arb: ACE long (173% ann.) | hyperliquid-funding | P4 | 48 | 2026-07-20 | 2026-07-20 | - |
+| 4fd3cfe0 | HN: A misalignment of AI in mathematics | hacker-news | P3 | 47 | 2026-09-12 | 2026-09-12 | - |
+| a5e76adb | HN (Show): Show HN: I turned a 25 yea... | hacker-news | P1 | 47 | 2026-09-10 | 2026-09-10 | - |
+| 5911bd8d | aerodrome-slipstream: WETH-USDC (4816... | defillama-yields | P4 | 47 | 2026-09-05 | 2026-09-05 | - |
 | af1590e9 | DeFi yield: supernova-cl WETH-USDT (E... | defillama-yields | P4 | 47 | 2026-08-21 | 2026-08-21 | - |
 | e51bfa06 | DeFi yield: zeebu ZBU (Ethereum) - 23... | defillama-yields | P4 | 47 | 2026-08-20 | 2026-08-20 | - |
 | 1aff3a46 | DeFi yield: aerodrome-slipstream WETH... | defillama-yields | P4 | 47 | 2026-08-20 | 2026-08-20 | - |
@@ -2800,6 +3031,8 @@
 | 88fa188e | New Base protocol: XGLD (TVL $12247K) | defillama-new-protocols | P4 | 47 | 2026-07-25 | 2026-07-25 | - |
 | 39e29acd | HN: Recreating the math behind the fi... | hacker-news | P2 | 47 | 2026-07-21 | 2026-07-21 | - |
 | 9ef89fe3 | HN: Show HN: Turn casual photos into ... | hacker-news | P2 | 47 | 2026-07-21 | 2026-07-21 | - |
+| 9b99c60a | HN: Watch AI materials-science and bi... | hacker-news | P3 | 46 | 2026-09-14 | 2026-09-14 | - |
+| 6cb8d699 | HN: Another researcher says OpenAI tr... | hacker-news | P3 | 46 | 2026-09-10 | 2026-09-10 | - |
 | 0523c4e7 | DeFi yield: uniswap-v4 ETH-CMETH (Eth... | defillama-yields | P4 | 46 | 2026-08-21 | 2026-08-21 | - |
 | 8d1d1163 | New Base protocol: SquadSwap Thanos (... | defillama-new-protocols | P4 | 46 | 2026-08-21 | 2026-08-21 | - |
 | ca2996e1 | HN: AI companies destroy physical boo... | hacker-news | P2 | 46 | 2026-08-21 | 2026-08-21 | - |
@@ -2893,6 +3126,7 @@
 | 9b4c7cfd | Reddit r/passive_income: My old colle... | reddit-passive_income | P2 | 46 | 2026-07-24 | 2026-07-24 | - |
 | e74f47c1 | Reddit r/passive_income: My old colle... | reddit-passive_income | P2 | 46 | 2026-07-24 | 2026-07-24 | - |
 | 5a88b51f | Reddit r/passive_income: My old colle... | reddit-passive_income | P2 | 46 | 2026-07-24 | 2026-07-24 | - |
+| 80d91ea3 | HN: David Sacks: OpenAI and Anthropic... | hacker-news | P3 | 45 | 2026-09-13 | 2026-09-13 | - |
 | 069a0727 | DeFi yield: aerodrome-slipstream USDC... | defillama-yields | P4 | 45 | 2026-08-22 | 2026-08-22 | - |
 | 1460a276 | DeFi yield: supernova-cl WETH-USDT (E... | defillama-yields | P4 | 45 | 2026-08-22 | 2026-08-22 | - |
 | 6033259d | DeFi yield: supernova-cl WETH-USDT (E... | defillama-yields | P4 | 45 | 2026-08-21 | 2026-08-21 | - |
@@ -3115,6 +3349,9 @@
 | 9da3faa3 | DeFi yield: ekubo ETH-EKUBO (Ethereum... | defillama-yields | P4 | 44 | 2026-07-23 | 2026-07-23 | - |
 | dc7f51bb | Reddit r/passive_income: [UPDATE] Ren... | reddit-passive_income | P1 | 44 | 2026-07-22 | 2026-07-22 | - |
 | da76a850 | DeFi yield: aerodrome-slipstream USDC... | defillama-yields | P4 | 44 | 2026-07-21 | 2026-07-21 | - |
+| a11df809 | HN: Apple's Siri AI Can Be Swapped Ou... | hacker-news | P3 | 43 | 2026-09-14 | 2026-09-14 | - |
+| 8225c29f | HN (Show): Show HN: Determinstic LLM ... | hacker-news | P3 | 43 | 2026-09-12 | 2026-09-12 | - |
+| 4d45e84d | aerodrome-slipstream: USDC-GOOGLC (29... | defillama-yields | P4 | 43 | 2026-09-04 | 2026-09-04 | - |
 | 75862db1 | ADA volatility: 12.1% daily | coingecko-volatility | P4 | 43 | 2026-09-03 | 2026-09-03 | - |
 | d2466126 | AI content niche: Deepshi vs. Venice ... | content-platform | P3 | 43 | 2026-08-21 | 2026-08-21 | - |
 | ef338cd0 | AI content niche: You company doesn’t... | content-platform | P3 | 43 | 2026-08-20 | 2026-08-20 | - |
@@ -3582,6 +3819,10 @@
 | bc5a2043 | DeFi yield: uniswap-v4 WETH-ARAIL (Ba... | defillama-yields | P4 | 43 | 2026-07-20 | 2026-07-20 | - |
 | 5a8a66d9 | Funding rate arb: ACE long (87% ann.) | hyperliquid-funding | P4 | 43 | 2026-07-20 | 2026-07-20 | - |
 | 7131d47c | Funding rate arb: ACE long (102% ann.) | hyperliquid-funding | P4 | 43 | 2026-07-20 | 2026-07-20 | - |
+| b2019ca8 | HN: Largest known Roman mosaic, benea... | hacker-news | P3 | 42 | 2026-09-14 | 2026-09-14 | - |
+| ace09022 | HN: Garry Tan wants US open-weight AI... | hacker-news | P3 | 42 | 2026-09-13 | 2026-09-13 | - |
+| 7915b50b | HN (Show): Show HN: Stop Scattering A... | hacker-news | P3 | 42 | 2026-09-09 | 2026-09-09 | - |
+| 6f12c1d4 | HN (Show): Show HN: Sentrint, Ship AI... | hacker-news | P3 | 42 | 2026-09-04 | 2026-09-04 | - |
 | 9f1e0b0d | AI content niche: AI as Short cut to ... | content-platform | P3 | 42 | 2026-08-22 | 2026-08-22 | - |
 | 409b64ff | AI content niche: Will You Still Have... | content-platform | P3 | 42 | 2026-08-21 | 2026-08-21 | - |
 | df251f94 | AI content niche: How to Create a Pro... | content-platform | P3 | 42 | 2026-08-20 | 2026-08-20 | - |
@@ -3697,6 +3938,8 @@
 | 46e2fbb4 | DeFi yield: ekubo ETH-EKUBO (Ethereum... | defillama-yields | P4 | 42 | 2026-07-21 | 2026-07-21 | - |
 | beb92f2e | DeFi yield: curve-dex APXUSD-USDC (Et... | defillama-yields | P4 | 42 | 2026-07-21 | 2026-07-21 | - |
 | 819e1745 | GitHub trending: donnemartin/system-d... | github-trending | P1 | 42 | 2026-07-20 | 2026-07-20 | - |
+| 1f1ba9ca | HN (Show): Show HN: Astah Pro MCP – E... | hacker-news | P1 | 41 | 2026-09-13 | 2026-09-13 | - |
+| fe4a1341 | HN (Show): Show HN: Browser viz of Op... | hacker-news | P2 | 41 | 2026-09-08 | 2026-09-08 | - |
 | 3ffd892d | New Base protocol: Base Dollar (TVL $... | defillama-new-protocols | P4 | 41 | 2026-08-21 | 2026-08-21 | - |
 | ace80cf6 | AI content niche: I Needed a Machine ... | content-platform | P3 | 41 | 2026-08-20 | 2026-08-20 | - |
 | ed9fed74 | New Base protocol: SquadSwap Thanos (... | defillama-new-protocols | P4 | 41 | 2026-08-20 | 2026-08-20 | - |
@@ -3831,6 +4074,8 @@
 | 5d9631b1 | DeFi yield: ekubo ETH-EKUBO (Ethereum... | defillama-yields | P4 | 41 | 2026-07-21 | 2026-07-21 | - |
 | 606d1861 | DeFi yield: aerodrome-slipstream USDC... | defillama-yields | P4 | 41 | 2026-07-20 | 2026-07-20 | - |
 | b600a273 | New Base protocol: Apyee (TVL $17K) | defillama-new-protocols | P4 | 41 | 2026-07-20 | 2026-07-20 | - |
+| c955b1b3 | MNT volatility: 7.3% daily | coingecko-volatility | P4 | 40 | 2026-09-09 | 2026-09-09 | - |
+| e9929c0a | HN: AI Has a Discovery Problem | hacker-news | P3 | 40 | 2026-09-09 | 2026-09-09 | - |
 | 70afc2c4 | DeFi yield: zeebu ZBU (Base) - 78049.... | defillama-yields | P4 | 40 | 2026-08-20 | 2026-08-20 | - |
 | 5457e35c | New Base protocol: Syntetika (TVL $10... | defillama-new-protocols | P4 | 40 | 2026-08-20 | 2026-08-20 | - |
 | 0a52a62a | DeFi yield: aerodrome-slipstream AVNT... | defillama-yields | P4 | 40 | 2026-08-20 | 2026-08-20 | - |
@@ -3948,6 +4193,7 @@
 | 7e3ddc86 | DeFi yield: supernova-cl WETH-USDT (E... | defillama-yields | P4 | 40 | 2026-07-21 | 2026-07-21 | - |
 | 87ac4dfa | DeFi yield: supernova-cl WETH-USDT (E... | defillama-yields | P4 | 40 | 2026-07-21 | 2026-07-21 | - |
 | 9373367a | DeFi yield: curve-dex USDC-SUSDAT (Et... | defillama-yields | P4 | 40 | 2026-07-20 | 2026-07-20 | - |
+| a295cb0a | HN (Show): Show HN: Self-host open-so... | hacker-news | P3 | 39 | 2026-09-09 | 2026-09-09 | - |
 | 1c5fd12a | HN: AI boosted homework scores, then ... | hacker-news | P2 | 39 | 2026-08-21 | 2026-08-21 | - |
 | 032ec4ba | HN: Google replaced Git tags for cert... | hacker-news | P2 | 39 | 2026-08-19 | 2026-08-19 | - |
 | bad195b0 | HN: Norway Should Buy OpenAI | hacker-news | P2 | 39 | 2026-08-18 | 2026-08-18 | - |
@@ -3996,6 +4242,7 @@
 | 9cad4e5a | HN: The startup's Postgres survival g... | hacker-news | P2 | 39 | 2026-07-22 | 2026-07-22 | - |
 | 55b5102c | HN: "Drawing" the Mona Lisa with GPT-... | hacker-news | P2 | 39 | 2026-07-21 | 2026-07-21 | - |
 | 2aff4019 | DeFi yield: supernova-cl WETH-USDT (E... | defillama-yields | P4 | 39 | 2026-07-21 | 2026-07-21 | - |
+| f9ccf60c | HN: What a time to be alive – rouge A... | hacker-news | P1 | 38 | 2026-09-14 | 2026-09-14 | - |
 | 8a77f703 | HN: Go grandmaster Shin defeats AI Ka... | hacker-news | P3 | 38 | 2026-09-04 | 2026-09-04 | - |
 | ced6f57c | HN: Aaron Swartz was prosecuted for s... | hacker-news | P1 | 38 | 2026-08-20 | 2026-08-20 | - |
 | d54ba80c | DeFi yield: supernova-cl WETH-USDT (E... | defillama-yields | P4 | 38 | 2026-08-17 | 2026-08-17 | - |
@@ -4165,6 +4412,7 @@
 | 6abaac5f | DeFi yield: curve-dex USDC-SUSDAT (Et... | defillama-yields | P4 | 37 | 2026-07-21 | 2026-07-21 | - |
 | cd342ded | DeFi yield: supernova-cl WETH-USDT (E... | defillama-yields | P4 | 37 | 2026-07-21 | 2026-07-21 | - |
 | c0924ba6 | DeFi yield: supernova-cl WETH-USDT (E... | defillama-yields | P4 | 37 | 2026-07-21 | 2026-07-21 | - |
+| 6f69ea84 | HN (Show): Show HN: Give your AI agen... | hacker-news | P1 | 36 | 2026-09-09 | 2026-09-09 | - |
 | e558100d | HN: Rhombus 1.1 is now available | hacker-news | P2 | 36 | 2026-08-17 | 2026-08-17 | - |
 | 1749d31c | DeFi yield: ekubo ETH-EKUBO (Ethereum... | defillama-yields | P4 | 36 | 2026-08-12 | 2026-08-12 | - |
 | 9d3121e2 | HN: Apple Silicon and macOS VMs: 11–1... | hacker-news | P2 | 36 | 2026-08-11 | 2026-08-11 | - |
@@ -4241,6 +4489,7 @@
 | e31daa90 | HN: Qwen-Image-3.0: Rich Content, Aut... | hacker-news | P3 | 36 | 2026-07-21 | 2026-07-21 | - |
 | 25176b33 | DeFi yield: supernova-cl WETH-USDT (E... | defillama-yields | P4 | 36 | 2026-07-20 | 2026-07-20 | - |
 | 0d6fa827 | HN: Who's Afraid of Chinese Models? | hacker-news | P2 | 36 | 2026-07-20 | 2026-07-20 | - |
+| d2cba49e | HN: I spent $220 on Google app ads an... | hacker-news | P2 | 35 | 2026-09-12 | 2026-09-12 | - |
 | 96af7008 | HN: Error by AI scribe during medical... | hacker-news | P2 | 35 | 2026-08-20 | 2026-08-20 | - |
 | cab8bb4a | DeFi yield: supernova-cl WETH-USDT (E... | defillama-yields | P4 | 35 | 2026-08-15 | 2026-08-15 | - |
 | d252c042 | HN: Oracle bans AI-generated code fro... | hacker-news | P2 | 35 | 2026-08-07 | 2026-08-07 | - |
@@ -4302,6 +4551,7 @@
 | ee1142e3 | HN: Codeberg: ToU extension to prohib... | hacker-news | P2 | 34 | 2026-07-22 | 2026-07-22 | - |
 | b16b35cc | HN: OpenAI and Hugging Face partner t... | hacker-news | P2 | 34 | 2026-07-21 | 2026-07-21 | - |
 | 42ae0763 | HN: Agent swarms and the new model ec... | hacker-news | P1 | 34 | 2026-07-20 | 2026-07-20 | - |
+| 57efaaaa | HN: The Worst Spam Emails: Inside iLa... | hacker-news | P1 | 33 | 2026-09-12 | 2026-09-12 | - |
 | 5e39677c | HN: Launch HN: Mireye (YC S26) – Infr... | hacker-news | P1 | 33 | 2026-09-03 | 2026-09-03 | - |
 | 7256acbc | New Base protocol: Syntetika (TVL $10... | defillama-new-protocols | P4 | 33 | 2026-08-20 | 2026-08-20 | - |
 | be9a03aa | HN: Google buys crashed airline Spiri... | hacker-news | P2 | 33 | 2026-08-18 | 2026-08-18 | - |
@@ -4441,6 +4691,7 @@
 | edb642f8 | Reddit r/passive_income: How can i se... | reddit-passive_income | P2 | 29 | 2026-07-26 | 2026-07-26 | - |
 | 66aada55 | Reddit r/passive_income: How to make ... | reddit-passive_income | P2 | 29 | 2026-07-23 | 2026-07-23 | - |
 | df4a6516 | Reddit r/passive_income: TIPS ladder ... | reddit-passive_income | P2 | 28 | 2026-08-05 | 2026-08-05 | - |
+| 960450fa | HN: Hitachi launches CO2 heat pump wa... | hacker-news | P3 | 27 | 2026-09-10 | 2026-09-10 | - |
 | 944c9905 | Reddit r/passive_income: Looking for ... | reddit-passive_income | P2 | 27 | 2026-08-03 | 2026-08-03 | - |
 | b3ee47fd | HN: MAI-Cyber-1-Flash inside MDASH | hacker-news | P2 | 27 | 2026-07-27 | 2026-07-27 | - |
 | 20fbee9e | Reddit r/passive_income: Got my first... | reddit-passive_income | P2 | 27 | 2026-07-25 | 2026-07-25 | - |
@@ -4455,14 +4706,22 @@
 | 8abf8f78 | Reddit r/passive_income: Monetize 45k... | reddit-passive_income | P3 | 26 | 2026-07-24 | 2026-07-24 | - |
 | 60a97dc0 | Reddit r/passive_income: Title: I was... | reddit-passive_income | P4 | 26 | 2026-07-24 | 2026-07-24 | - |
 | 96d21d98 | Reddit r/passive_income: Virtual Assi... | reddit-passive_income | P2 | 26 | 2026-07-23 | 2026-07-23 | - |
+| e496be1e | HN: Amazon pilots ad services in ChatGPT | hacker-news | P1 | 25 | 2026-09-10 | 2026-09-10 | - |
+| 6963a967 | HN (Show): Show HN: Edge-AI device th... | hacker-news | P3 | 25 | 2026-09-08 | 2026-09-08 | - |
+| 395643ae | HN: Government Rails Site Hit Hours A... | hacker-news | P3 | 25 | 2026-09-04 | 2026-09-04 | - |
 | 1e1c178b | Reddit r/passive_income: Virtual Assi... | reddit-passive_income | P2 | 25 | 2026-07-23 | 2026-07-23 | - |
 | 82041b46 | Reddit r/passive_income: 21F, Looking... | reddit-passive_income | P2 | 24 | 2026-07-24 | 2026-07-24 | - |
 | 14f7f7b7 | Reddit r/passive_income: Virtual Assi... | reddit-passive_income | P2 | 23 | 2026-07-24 | 2026-07-24 | - |
+| c9520625 | HN (Show): Show HN: Rubato – Retro-Ma... | hacker-news | P3 | 22 | 2026-09-05 | 2026-09-05 | - |
 | a9ee65b8 | HN: GPT-6 Astra | hacker-news | P3 | 21 | 2026-09-03 | 2026-09-03 | - |
 | 246de4b7 | Reddit r/passive_income: I'm trying t... | reddit-passive_income | P2 | 18 | 2026-07-28 | 2026-07-28 | - |
 | e0bfb049 | HN: After Losses, Retail Investors Fl... | hacker-news | P2 | 15 | 2026-08-05 | 2026-08-05 | - |
+| fbfa17c8 | HN: Understanding the recent DDoS att... | hacker-news | P3 | 13 | 2026-09-09 | 2026-09-09 | - |
 | 6e9f6cab | Reddit r/passive_income: 35$-50$ Guar... | reddit-passive_income | P2 | 13 | 2026-07-23 | 2026-07-23 | - |
 | 836ed8b8 | Reddit r/passive_income: I started re... | reddit-passive_income | P2 | 12 | 2026-08-05 | 2026-08-05 | - |
+| 34287738 | HN: End-to-end infrastructure for tra... | hacker-news | P3 | 11 | 2026-09-08 | 2026-09-08 | - |
+| ea24ddd3 | HN: GPT-6 Astra | hacker-news | P3 | 10 | 2026-09-04 | 2026-09-04 | - |
+| 012da918 | HN: Tension wood: A 'muscle' that can... | hacker-news | P2 | 0 | 2026-09-09 | 2026-09-09 | - |
 
 ## 🆕 Nuevas (1399)
 
@@ -5868,15 +6127,24 @@
 | 25b15082 | DeFi yield: aerodrome-slipstream AVNT... | defillama-yields | P4 | 50 | 2026-08-13 | 2026-08-13 | - |
 | acea391d | DeFi yield: ekubo ETH-EKUBO (Ethereum... | defillama-yields | P4 | 50 | 2026-08-13 | 2026-08-13 | - |
 
-## 📋 verificada_legitima (5)
+## 📋 verificada_legitima (14)
 
 | ID | Título | Fuente | Prioridad | Score | Descubierto | Actualizado | Razón |
 |----|--------|--------|-----------|-------|-------------|-------------|-------|
+| fdadac78 | High-Throughput WebSocket Arbitrage E... | quant-architecture-feed | P1 | 100 | 2026-09-04 | 2026-09-04 | - |
+| 93076f0d | GitHub Repo: personal-coding/Live-Spo... | github-arbitrage-search | P1 | 100 | 2026-09-04 | 2026-09-04 | - |
+| 4fa0eb9c | GitHub: coworker | github-agent-protocol | P1 | 100 | 2026-09-04 | 2026-09-04 | - |
 | 9eef526c | High-Throughput WebSocket Arbitrage E... | quant-architecture-feed | P1 | 100 | 2026-09-03 | 2026-09-03 | - |
 | e5ea07fd | GitHub Repo: personal-coding/Live-Spo... | github-arbitrage-search | P1 | 100 | 2026-09-03 | 2026-09-03 | - |
 | 975d10ce | Provably Fair Virtual Casino Mathemat... | gaming-mathematics-lab | P1 | 98 | 2026-09-03 | 2026-09-03 | - |
+| 97ee2a09 | Distributed Stealth Scraper for Betti... | stealth-crawler-bench | P2 | 96 | 2026-09-04 | 2026-09-04 | - |
+| dca2cd7e | Relevance AI Integration | ai-agent-store-relevance-ai | P1 | 92 | 2026-09-04 | 2026-09-04 | - |
 | b0bb5b5a | Distributed Stealth Scraper for Betti... | stealth-crawler-bench | P2 | 92 | 2026-09-03 | 2026-09-03 | - |
 | d6c78beb | GitHub Repo: GuillermoEguilaz/Polymar... | github-arbitrage-search | P2 | 91 | 2026-09-03 | 2026-09-03 | - |
+| fa9bb856 | Offer web scraping services via Brows... | browserless | P1 | 90 | 2026-09-04 | 2026-09-04 | - |
+| cf5df2ac | GitHub Repo: jordantete/OddsHarvester... | github-arbitrage-search | P2 | 88 | 2026-09-10 | 2026-09-10 | - |
+| 304aa606 | HN (Show): Show HN: A free API to que... | hacker-news | P1 | 86 | 2026-09-10 | 2026-09-10 | - |
+| 1c92f3ba | MTurk batch annotation tasks automation | amazon-mturk | P2 | 85 | 2026-09-04 | 2026-09-04 | - |
 
 ---
 
